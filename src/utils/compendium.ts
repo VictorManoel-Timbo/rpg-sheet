@@ -54,287 +54,379 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
         },
         {
             nome: 'Avinarc',
-            descricao: `Um capuz retirado de um estranho de manto escuro no canto mais afastado de uma taverna pode revelar um Avinarc, com sua cabeça semelhante à de um falcão e sua pele coberta de penas. As outrora poderosas asas do Avinarc tornaram-se braços com mãos hábeis. Apenas suas cabeças e penas os denunciam como não humanos. Com um manto cobrindo-os, eles têm a forma de humanos de constituição leve.
-                        Outrora uma raça orgulhosa e nobre, com terras e nações próprias, esse povo-pássaro viu seu número diminuir lentamente devido a uma poderosa maldição lançada sobre eles em eras passadas. Uma antiga profecia afirma que os Avinarcs um dia superarão a maldição e ressurgirão em número e poder, mas até lá, contentam-se em passar os dias com os destroços da humanidade. Agora são reclusos, misturando-se silenciosamente à sociedade humana, muitas vezes envolvendo-se com o lado mais sombrio da humanidade. Usam sua rapidez e agilidade aviárias para auxiliá-los em roubos e trapaças. Embora não sejam inerentemente maus, os Humanos são uma raça inferior para eles (embora a maioria nunca admitisse isso) e não se importam com o destino dos homens ou de sua sociedade. Os Avinarcs usam uma variedade de pequenas armas de mão ou armas de projéteis facilmente ocultáveis. Se pressionados em combate corpo a corpo, eles até usarão seus bicos.`,
-            images: ['public/avinarc.png', 'public/races-physical/avinarc.png'],
+            descricao: `Um capuz retirado de um estranho de manto escuro no canto mais afastado de uma taverna pode revelar um Avinarc, com sua cabeça semelhante à de um falcão e sua pele coberta de penas. As outrora poderosas asas do Avinarc tornaram-se braços com mãos hábeis. Apenas suas cabeças e penas os denunciam como não humanos.
+                    Outrora uma raça orgulhosa e nobre, com terras e nações próprias, esse povo-pássaro viu seu número diminuir lentamente devido a uma poderosa maldição lançada sobre eles em eras passadas. Uma antiga profecia afirma que os Avinarcs um dia superarão a maldição e ressurgirão em número e poder. Agora são reclusos, misturando-se silenciosamente à sociedade humana, muitas vezes envolvendo-se com o lado mais sombrio da humanidade. Usam sua rapidez e agilidade aviárias para auxiliá-los em roubos e trapaças.`,
+            images: ['public/races/avinarc.png'],
             detalhes: {
                 Olfato_Aguçado_II: 'Os Avinarcs recebem um bônus de +10 em testes de Percepção envolvendo olfato.',
                 Ossos_Leves_I: 'Os Avinarcs são tratados como criaturas Pequenas para fins de seus acertos (determine normalmente e multiplique por 0,75) e ataques contra eles, mas não para outros fins.',
                 Armamento_Natural: 'Os Avinarcs podem atacar usando seus bicos, utilizando a especialização Bico da perícia Treinamento de Combate: Desarmado.',
                 Dieta_Restrita: 'Os Avinarcs são carnívoros e não obtêm sustento de alimentos que não sejam carne.',
-                Visão_de_Águia: 'A visão aguçada de Avinarc permite tanto uma boa visão periférica quanto a capacidade de focar em objetos distantes, como uma lebre a três quilômetros de distância. Eles recebem um bônus de +20 em todas as manobras de Percepção baseadas na visão.',
+                Visão_de_Águia: 'A visão aguçada de Avinarc permite tanto uma boa visão periférica quanto a capacidade de focar em objetos distantes. Eles recebem um bônus de +20 em todas as manobras de Percepção baseadas na visão.',
                 Asas_Vestigiais: 'As asas de Avinarc (agora reduzidas a braços densamente emplumados) são pequenas demais para o voo, mas fornecem um bônus de +10 em Salto e ao usar Acrobacias para reduzir o impacto de uma queda.'
             }
         },
         {
             nome: 'Anão',
             descricao: `Provavelmente a raça fisicamente mais resistente, os Anãos são baixos, atarracados e de tez rosada, com olhos profundos e cabelos e barbas escuros e crespos (dos quais se orgulham bastante, cultivando longas e elaboradas tranças). Os Anãos são artesãos exímios e bem adaptados à vida subterrânea; adoram minerar a terra em busca de metais e pedras preciosas, transformando-os em armas e artefatos poderosos. Não tão férteis quanto os humanos, têm poucos filhos, e menos de um terço de sua população é composta por mulheres, que são zelosamente protegidas em seus salões cavernosos.
-                        Os Anãos possuem visão no escuro superior, sendo capazes de enxergar excepcionalmente bem na penumbra e a curtas distâncias mesmo na escuridão total. São ligeiramente mais densos que os humanos, o que torna a natação mais difícil, mas não impossível (-25 em testes de Resistência ao nadar). Possuem considerável resistência à magia da Essência e do Mentalismo, artes para as quais não têm talento especial, mas não são menos capazes que as outras raças no domínio da Canalização. Os Anãos são muito resistentes a venenos e doenças, e possuem uma expectativa de vida excepcional, de até 600 anos.`,
-            images: ['public/anao-pt1.png', 'public/anao-pt2.png', 'public/races-physical/anao.png'],
+                    Os Anãos possuem visão no escuro superior, sendo capazes de enxergar excepcionalmente bem na penumbra e a curtas distâncias mesmo na escuridão total. São ligeiramente mais densos que os humanos, o que torna a natação mais difícil, mas não impossível (-25 em testes de Resistência ao nadar). Possuem considerável resistência à magia da Essência e do Mentalismo. Os Anãos são muito resistentes a venenos e doenças, e possuem uma expectativa de vida excepcional, de até 600 anos.`,
+            images: ['public/races/anao.png'],
             detalhes: {
                 Visão_no_Escuro_I: 'Os Anãos podem enxergar a 3 metros de distância sem penalidades, mesmo na escuridão total.',
-                Inapto_V: '(Resistência ao nadar) Devido à sua densidade, os Anãos precisam se esforçar muito para não se afogarem. Eles sofrem uma penalidade de -25 nos testes de Resistência enquanto nadam.',
+                Inapto_V_Natação: 'Devido à sua densidade, os Anãos precisam se esforçar muito para não se afogarem. Eles sofrem uma penalidade de -25 nos testes de Resistência enquanto nadam.',
                 Visão_Noturna: 'Os Anãos podem enxergar em penumbra, equivalente às condições noturnas, tão bem quanto um humano enxerga à luz do dia. Todas as penalidades por escuridão são reduzidas em 40, exceto em condições de escuridão total.'
             }
         },
         {
-            nome: 'Alto Elfo',
-            descricao: `Embora semelhantes aos homens mortais na maioria dos aspectos, todos os tipos de elfos compartilham diversas diferenças importantes, ainda que sutis. Como raça, são mais altos que a maioria dos humanos, embora esbeltos. Os homens élficos não possuem pelos faciais e, em geral, têm menos pelos no corpo do que os humanos. De modo geral, os elfos têm uma aparência mais clara do que seus irmãos mortais, com traços mais delicados, pele imaculada e orelhas pontiagudas sem lóbulos.
-                        A visão dos elfos é extremamente aguçada; eles conseguem enxergar em uma noite clara como se estivessem em plena luz do dia. Sua visão é correspondentemente limitada com menos luz, e eles não conseguem enxergar nada na escuridão total. Talvez o mais importante seja que os elfos não envelhecem após a idade adulta, e seus corpos são imunes a todas as infecções bacterianas e virais não mágicas. Assim, são virtualmente imortais (exceto em caso de morte violenta).
-                        Cabelos negros como azeviche distinguem os Altos Elfos de seus parentes de pele mais clara, e olhos castanhos e avelã são as cores mais comuns de seus olhos. O amor por coisas belas, expresso pela habilidade em construção e artesanato, une-se à curiosidade sobre a natureza de toda a criação, desviando até os mais ambiciosos do caminho natural. Contudo, as armaduras magníficas, as armas brilhantes e as belas joias veneradas em suas graciosas cidades de muralhas de mármore parecem quase justificar o preço. Alguns dos artefatos mais poderosos que se conhece provêm das forjas desses artesãos élficos. Quando vivem entre outros elfos, inspiram-se nos Elfos Belos, mas aceitam de bom grado o fardo diário de governar seu povo.`,
-            images: ['', 'public/races-physical/elfo.png'],
-            detalhes: {
-                Stride: -0.3,
-                DP: 10
-            }
-        },
-        {
             nome: 'Elfo Belo',
-            descricao: `Embora semelhantes aos homens mortais na maioria dos aspectos, todos os tipos de elfos compartilham diversas diferenças importantes, ainda que sutis. Como raça, são mais altos que a maioria dos humanos, embora esbeltos. Os homens élficos não possuem pelos faciais e, em geral, têm menos pelos no corpo do que os humanos. De modo geral, os elfos têm uma aparência mais clara do que seus irmãos mortais, com traços mais delicados, pele imaculada e orelhas pontiagudas sem lóbulos.
-                        A visão dos elfos é extremamente aguçada; eles conseguem enxergar em uma noite clara como se estivessem em plena luz do dia. Sua visão é correspondentemente limitada com menos luz, e eles não conseguem enxergar nada na escuridão total. Talvez o mais importante seja que os elfos não envelhecem após a idade adulta, e seus corpos são imunes a todas as infecções bacterianas e virais não mágicas. Assim, são virtualmente imortais (exceto em caso de morte violenta).
-                        Os mais etéreos de todos os elfos, os Elfos Belos, têm cabelos dourados, olhos azuis, pele pálida e preferem vestimentas brancas, prateadas e douradas. Seja por graça divina ou herança feérica, eles possuem uma aura visível que impressiona aliados e intimida inimigos. Raramente são vistos além das fronteiras das terras élficas, onde inspiram seus semelhantes com sua música, magia e sabedoria. Melodia e canções são frequentes em seus encontros, pois até mesmo os menos habilidosos podem tocar harpa ou cantar, enquanto os mais talentosos compõem música ou encantam os ouvidos com sua maestria em diversos instrumentos.`,
+            descricao: `Os mais etéreos de todos os elfos, os Elfos Belos têm cabelos dourados, olhos azuis, pele pálida e preferem vestimentas brancas, prateadas e douradas. Seja por graça divina ou herança feérica, eles possuem uma aura visível que impressiona aliados e intimida inimigos. Raramente são vistos além das fronteiras das terras élficas.
+                    Como todos os elfos, não envelhecem após a idade adulta e seus corpos são imunes a todas as infecções bacterianas e virais não mágicas, sendo virtualmente imortais. Sua visão é extremamente aguçada; conseguem enxergar em uma noite clara como se estivessem em plena luz do dia.`,
+            images: ['public/races/elfo.png'],
             detalhes: {
-                Stride: -0.3,
-                DP: 10
+                Sono_Eficiente_II: 'Elfos meditam em vez de dormir. Duas horas de meditação substituem quatro horas de sono.',
+                Imunidade_a_Doenças_I: 'Elfos são imunes a todas as doenças não mágicas.',
+                Visão_Noturna: 'Elfos podem enxergar na penumbra tão bem quanto um humano enxerga à luz do dia. Todas as penalidades por escuridão são reduzidas em 40, exceto em escuridão total.',
+                Aura_Defensiva_II: 'A aura dos Elfos Belos embota ou confunde os sentidos de seus inimigos, concedendo-lhes +10 de DB, que não é cumulativo com nenhuma magia de Aura ou Visão Turva.',
+                Voz_de_Ouro: 'Os Elfos Belos possuem belas vozes que acalmam e tranquilizam. Eles recebem +10 em qualquer manobra para acalmar ou persuadir verbalmente (Encantar, Canto, Liderança, etc.).'
             }
         },
         {
             nome: 'Elfo Cinzento',
-            descricao: `Embora semelhantes aos homens mortais na maioria dos aspectos, todos os tipos de elfos compartilham diversas diferenças importantes, ainda que sutis. Como raça, são mais altos que a maioria dos humanos, embora esbeltos. Os homens élficos não possuem pelos faciais e, em geral, têm menos pelos no corpo do que os humanos. De modo geral, os elfos têm uma aparência mais clara do que seus irmãos mortais, com traços mais delicados, pele imaculada e orelhas pontiagudas sem lóbulos.
-                        A visão dos elfos é extremamente aguçada; eles conseguem enxergar em uma noite clara como se estivessem em plena luz do dia. Sua visão é correspondentemente limitada com menos luz, e eles não conseguem enxergar nada na escuridão total. Talvez o mais importante seja que os elfos não envelhecem após a idade adulta, e seus corpos são imunes a todas as infecções bacterianas e virais não mágicas. Assim, são virtualmente imortais (exceto em caso de morte violenta).
-                        Os Elfos Cinzentos são quase sempre intermediários entre seus irmãos mais extremos. A maioria tem cabelos loiros e olhos azuis ou cinzentos. Não são tão artísticos quanto os elfos loiros, tão astutos e industriosos quanto os altos elfos, ou tão serenos e rústicos quanto os elfos da floresta. Formam o meio-termo com sua companhia agradável e seu amor pela arte e pelo artesanato. Quando a guerra chama, eles pegam em armas, mas na maior parte do tempo se estabelecem, criam uma família e fazem o que bem entendem. Não constroem cidades de mármore, mas amam cidades abertas em meio a uma bela paisagem que os conecta mais intimamente à natureza. Alguns vivem sob o domínio dos Altos Elfos, enquanto outros se aventuram pelos mares como mercadores e viajantes. Não são os elfos mais mágicos, mas também não lhes são estranhos a magia.`,
+            descricao: `Os Elfos Cinzentos são quase sempre intermediários entre seus irmãos mais extremos. A maioria tem cabelos loiros e olhos azuis ou cinzentos. Não são tão artísticos quanto os elfos loiros, tão astutos e industriosos quanto os altos elfos, ou tão serenos e rústicos quanto os elfos da floresta. Formam o meio-termo com sua companhia agradável e seu amor pela arte e pelo artesanato.
+                    Quando a guerra chama, eles pegam em armas, mas na maior parte do tempo se estabelecem, criam uma família e fazem o que bem entendem. Não constroem cidades de mármore, mas amam cidades abertas em meio a uma bela paisagem. Compartilham as características gerais élfica de imortalidade e imunidade a doenças não mágicas.`,
+            images: ['public/races/elfo.png'],
             detalhes: {
-                Stride: -0.3,
-                DP: 10
+                Sono_Eficiente_II: 'Elfos meditam em vez de dormir. Duas horas de meditação substituem quatro horas de sono.',
+                Imunidade_a_Doenças_I: 'Elfos são imunes a todas as doenças não mágicas.',
+                Visão_Noturna: 'Elfos podem enxergar na penumbra tão bem quanto um humano enxerga à luz do dia. Todas as penalidades por escuridão são reduzidas em 40, exceto em escuridão total.'
+            }
+        },
+        {
+            nome: 'Elfo Alto',
+            descricao: `Cabelos negros como azeviche distinguem os Altos Elfos de seus parentes de pele mais clara, e olhos castanhos e avelã são as cores mais comuns. O amor por coisas belas, expresso pela habilidade em construção e artesanato, une-se à curiosidade sobre a natureza de toda a criação. As armaduras magníficas, as armas brilhantes e as belas joias veneradas em suas graciosas cidades de muralhas de mármore parecem justificar o preço.
+                    Alguns dos artefatos mais poderosos que se conhece provêm das forjas desses artesãos élficos. Quando vivem entre outros elfos, inspiram-se nos Elfos Belos, mas aceitam de bom grado o fardo diário de governar seu povo. Compartilham as características gerais élfica de imortalidade e imunidade a doenças não mágicas.`,
+            images: ['public/races/elfo.png'],
+            detalhes: {
+                Sono_Eficiente_II: 'Elfos meditam em vez de dormir. Duas horas de meditação substituem quatro horas de sono.',
+                Imunidade_a_Doenças_I: 'Elfos são imunes a todas as doenças não mágicas.',
+                Visão_Noturna: 'Elfos podem enxergar na penumbra tão bem quanto um humano enxerga à luz do dia. Todas as penalidades por escuridão são reduzidas em 40, exceto em escuridão total.'
             }
         },
         {
             nome: 'Elfo da Floresta',
-            descricao: `Embora semelhantes aos homens mortais na maioria dos aspectos, todos os tipos de elfos compartilham diversas diferenças importantes, ainda que sutis. Como raça, são mais altos que a maioria dos humanos, embora esbeltos. Os homens élficos não possuem pelos faciais e, em geral, têm menos pelos no corpo do que os humanos. De modo geral, os elfos têm uma aparência mais clara do que seus irmãos mortais, com traços mais delicados, pele imaculada e orelhas pontiagudas sem lóbulos.
-                        A visão dos elfos é extremamente aguçada; eles conseguem enxergar em uma noite clara como se estivessem em plena luz do dia. Sua visão é correspondentemente limitada com menos luz, e eles não conseguem enxergar nada na escuridão total. Talvez o mais importante seja que os elfos não envelhecem após a idade adulta, e seus corpos são imunes a todas as infecções bacterianas e virais não mágicas. Assim, são virtualmente imortais (exceto em caso de morte violenta).
-                        Os Elfos da Floresta vestem tons de verde e cinza para se camuflarem com o ambiente. Cabelos cor de areia e olhos azuis claros, verdes ou cinzentos complementam sua aparência rústica. Eles são ligeiramente mais baixos que outros elfos, embora mais altos que os humanos. Esses elfos são os mais comuns de toda a raça élfica e podem ser encontrados em quase todas as florestas do mundo. Os Elfos da Floresta costumam ser bastante distantes de outros elfos e são conhecidos por discordar abertamente das políticas dos Altos Elfos e dos Elfos Belos. Mais sintonizados com as sutis marés das florestas, riachos e criaturas que vagam pelo reino silvestre, os Elfos da Floresta são hábeis em se mover silenciosamente, sua presença na floresta frequentemente passando despercebida entre as sombras dos galhos balançando.`,
+            descricao: `Os Elfos da Floresta vestem tons de verde e cinza para se camuflarem com o ambiente. Cabelos cor de areia e olhos azuis claros, verdes ou cinzentos complementam sua aparência rústica. Eles são ligeiramente mais baixos que outros elfos, embora mais altos que os humanos. Esses elfos são os mais comuns de toda a raça élfica e podem ser encontrados em quase todas as florestas do mundo.
+                    Os Elfos da Floresta costumam ser bastante distantes de outros elfos e são conhecidos por discordar abertamente das políticas dos Altos Elfos e dos Elfos Belos. Mais sintonizados com as sutis marés das florestas, riachos e criaturas que vagam pelo reino silvestre, os Elfos da Floresta são hábeis em se mover silenciosamente.`,
+            images: ['public/races/elfo.png'],
             detalhes: {
-                Stride: -0.3,
-                DP: 10
+                Sono_Eficiente_II: 'Elfos meditam em vez de dormir. Duas horas de meditação substituem quatro horas de sono.',
+                Imunidade_a_Doenças_I: 'Elfos são imunes a todas as doenças não mágicas.',
+                Visão_Noturna: 'Elfos podem enxergar na penumbra tão bem quanto um humano enxerga à luz do dia. Todas as penalidades por escuridão são reduzidas em 40, exceto em escuridão total.',
+                Audição_Felina: 'Os Elfos da Floresta possuem uma audição tão aguçada quanto a de um gato, permitindo-lhes ouvir alguns sons agudos e determinar com mais precisão a localização da fonte sonora (ganhando +10 em manobras de Percepção para localizar um som).'
             }
         },
         {
             nome: 'Gnoll',
-            descricao: '',
+            descricao: `Pequenas figuras enrugadas de pele cinzenta e pouco cabelo, os Gnolls habitam as cavernas naturais que abundam nas regiões montanhosas. Quando protegidos pelo segredo e pela pedra, seu temperamento tímido relaxa e permite a celebração de festivais alegres. A luz do sol não os fere, mas o brilho os assusta e faz seus olhos lacrimejarem (-25 em todas as atividades), levando os Gnolls a preferirem o reino subterrâneo.
+                    A maioria dos Gnolls evita o combate, usando suas magias para se esconder e escapar rapidamente. Sua habilidade como ilusionistas, praticantes e magos lhes permite evitar encontros com outras raças. Eles viajam em clãs e se estabelecem apenas em grutas desertas. Os Gnolls vivem em média 105 anos.`,
+            images: ['public/races/gnoll.png'],
             detalhes: {
-                Stride: -0.3,
-                DP: 10
+                Tamanho_Reduzido_I: 'Gnolls são criaturas Pequenas. Além de outros efeitos de tamanho, multiplique seus impactos de concussão por 0,75.',
+                Visão_Noturna: 'Os gnolls podem enxergar em penumbra tão bem quanto um humano enxerga à luz do dia. Todas as penalidades por escuridão são reduzidas em 40, exceto em escuridão total.',
+                Sensibilidade_à_Luz_I: 'Os gnolls sofrem uma penalidade de -25 quando expostos à luz intensa equivalente à luz solar direta, mas não sofrem penalidade em dias nublados ou em áreas sombreadas.',
+                Audição_Aguçada: 'Os gnolls possuem audição aguçada nas faixas de alta e baixa frequência. Eles podem localizar sons com grande precisão e ouvir perigos vindos de uma distância 10 vezes maior que a de um humano. Recebem +20 em manobras de Percepção auditiva.',
+                Prodígio_II_IV: 'Os gnolls são extremamente sintonizados com o ambiente ao seu redor. Recebem +10 em manobras de Sobrevivência, valor dobrado ao usar a perícia para observação do clima.'
             }
         },
         {
             nome: 'Gnomo',
-            descricao: '',
+            descricao: `Menores que os anões, e com aparência mais frágil e debilitada, os longevos Gnomos preferem viver em cavernas rasas, onde acumulam conhecimento e sabedoria obsessivamente. Tomos antigos e pergaminhos raros povoam suas bibliotecas abarrotadas. O amor pela solidão garante que a maioria dos Gnomos permaneça sem herdeiros, raramente casando ou constituindo família, apesar da expectativa de vida típica de 600 anos.
+                    Os Gnomos são reservados, mas se forçados a combater, seus inimigos devem estar preparados para uma surpresa, pois não se sabe quais feitiços e/ou artefatos mágicos um Gnomo específico possui. Embora solitários, os Gnomos não são tímidos nem tristes; a generosa hospitalidade atrai muitos amigos que os visitam como hóspedes.`,
+            images: ['public/races/gnomo.png'],
             detalhes: {
-                Stride: -0.3,
-                DP: 10
+                Visão_Noturna: 'Os gnomos podem enxergar em penumbra, equivalente às condições noturnas, tão bem quanto um humano enxerga à luz do dia. Todas as penalidades por escuridão são reduzidas em 40, exceto em condições de escuridão total.'
             }
         },
         {
             nome: 'Goblin',
-            descricao: '',
+            descricao: `Os goblins são pequenos, com cerca de 90 cm de altura, e têm constituição física magra e esguia. Tendem a ter cabeças longas e estreitas com queixos pontiagudos, orelhas pontiagudas sem lóbulos, narizes estreitos e lábios finos. Os goblins subterrâneos comuns têm pele amarelada pálida, enquanto aqueles que vivem na superfície adquirem uma coloração verde-escura.
+                    Uma combinação de forte desejo de dominância e um instinto racional de fuga do perigo frequentemente prejudica sua capacidade de formar grupos maiores e culturas estáveis. A lealdade, quando existe, é reservada a familiares próximos. Se suas vidas fossem mais seguras, os goblins atingiriam uma idade média de 70 anos, mas na prática poucos têm essa sorte.`,
+            images: ['public/races/goblin.png'],
             detalhes: {
-                Stride: -0.3,
-                DP: 10
+                Visão_no_Escuro_I: 'Goblins podem enxergar a 3 metros sem penalidades, mesmo na escuridão total.',
+                Tamanho_Reduzido_I: 'Goblins são criaturas Pequenas. Além de outros efeitos de tamanho, multiplique seus acertos de concussão por 0,75.',
+                Visão_Noturna: 'Goblins podem enxergar em penumbra tão bem quanto um humano enxerga à luz do dia. Todas as penalidades por escuridão são reduzidas em 40, exceto em escuridão total.',
+                Prodígio_Mecânica_V: 'Mãos pequenas, fortes e ágeis, e uma facilidade em visualizar sólidos tridimensionais os tornam muito hábeis com dispositivos mecânicos (+25 em Mecânica).',
+                Sensibilidade_à_Luz_III: 'Goblins sofrem uma penalidade de -75 quando expostos à luz solar direta, -50 em dias nublados, -25 em condições de sombra ou dias muito nublados, ou -0 em sombras completas.'
             }
         },
         {
             nome: 'Gratar',
-            descricao: '',
+            descricao: `Os Gratar são humanoides semelhantes a sapos, com altura semelhante à de um homem, e predominantemente amorais. Possuem bocas largas e babantes e grandes olhos bulbosos. Essas criaturas são anfíbias, mas passam a maior parte do tempo fora da água.
+                    A cor dos Gratar varia de acordo com seu poder e status: jovens são verdes e fracos; ao amadurecer ficam amarelos e mais ousados; os mais poderosos ficam negros; os que se isolam ficam acinzentados; e os que dominaram muitas tribos ficam vermelhos (Gratar Reais). A maioria dos Gratar é capaz de atingir a idade de 100 anos, e os Gratar Reais podem chegar aos dois séculos.`,
+            images: ['public/races/gratar.png'],
             detalhes: {
-                Stride: -0.3,
-                DP: 10
-            }
-        },
-        {
-            nome: 'Halfling',
-            descricao: '',
-            detalhes: {
-                Stride: -0.3,
-                DP: 10
-            }
-        },
-        {
-            nome: 'Hobgoblin',
-            descricao: '',
-            detalhes: {
-                Stride: -0.3,
-                DP: 10
-            }
-        },
-        {
-            nome: 'Humano Alto',
-            descricao: '',
-            detalhes: {
-                Stride: -0.3,
-                DP: 10
-            }
-        },
-        {
-            nome: 'Humano Commun',
-            descricao: '',
-            detalhes: {
-                Stride: -0.3,
-                DP: 10
-            }
-        },
-        {
-            nome: 'Humano da Caverna',
-            descricao: '',
-            detalhes: {
-                Stride: -0.3,
-                DP: 10
-            }
-        },
-        {
-            nome: 'Humano Mestiço',
-            descricao: '',
-            detalhes: {
-                Stride: -0.3,
-                DP: 10
-            }
-        },
-        {
-            nome: 'Hvasstonn',
-            descricao: '',
-            detalhes: {
-                Stride: -0.3,
-                DP: 10
-            }
-        },
-        {
-            nome: 'Idiyva',
-            descricao: '',
-            detalhes: {
-                Stride: -0.3,
-                DP: 10
-            }
-        },
-        {
-            nome: 'Kobold',
-            descricao: '',
-            detalhes: {
-                Stride: -0.3,
-                DP: 10
-            }
-        },
-        {
-            nome: 'Nycamerith',
-            descricao: '',
-            detalhes: {
-                Stride: -0.3,
-                DP: 10
+                Visão_Lagartixa: 'Os olhos dos Gratar funcionam como os de uma lagartixa, permitindo maior clareza de visão de perto, além de boa percepção de profundidade, e não perdem a visão de cores em condições de escuridão. Recebem um bônus de +10 em todas as manobras de Percepção baseadas na visão.',
+                Musculatura_Recurvada: 'Os Gratar são saltadores incríveis com pernas poderosas. Seu salto em distância correndo é de 3,6 metros e seu salto em altura correndo é de 74 centímetros. Recebem um bônus de +20 em manobras de Acrobacia, Escalada, Salto e Corrida.'
             }
         },
         {
             nome: 'Meio Elfo',
-            descricao: '',
+            descricao: `Os meio-elfos se beneficiam da combinação da graça élfica e da robustez humana. São fortes e esbeltos, mais magros que os homens, mas mais robustos que os elfos, com traços finos e angulares. Todos os meio-elfos têm uma expectativa de vida maior que a dos humanos, mas não possuem a imortalidade élfica.
+                    Meio-elfos geralmente vivem em sociedades élficas ou humanas, em vez de formarem sociedades próprias. Em regiões onde o contato entre as duas raças tem sido constante por longos períodos, populações mistas podem surgir e desenvolver suas próprias identidades culturais distintas.`,
+            images: ['public/races/meio-elfo.png'],
             detalhes: {
-                Stride: -0.3,
-                DP: 10
+                Dorminhoco_Eficiente_I: 'Alguns meio-elfos meditam, enquanto outros dormem, mas em ambos os casos, três horas de sono ou meditação substituem quatro horas de sono.',
+                Visão_Noturna: 'Meio-elfos podem enxergar em penumbra tão bem quanto um humano enxerga à luz do dia. Todas as penalidades por escuridão são reduzidas em 40, exceto em condições de escuridão total.'
             }
         },
         {
-            nome: 'Orc Cinzento',
-            descricao: '',
+            nome: 'Halfling',
+            descricao: `Os halflings são muito baixos, raramente ultrapassando 1,20 m de altura, e tendem a ser robustos. Possuem pés grandes e peludos que são quase imunes ao frio, e por isso costumam andar descalços. São um povo pacífico, que prefere a tranquilidade de suas aldeias. Amantes de boa comida e bebida, passam grande parte do tempo em tavernas e casas de amigos.
+                    Os halflings possuem um alto nível de destreza manual e são hábeis em se mover silenciosamente. Quando pressionados, podem se tornar inimigos implacáveis e incansáveis devido a uma constituição incrível, capazes de resistir até mesmo aos danos mágicos e físicos mais poderosos por longos períodos.`,
+            images: ['public/races/halfling.png'],
             detalhes: {
-                Stride: -0.3,
-                DP: 10
+                Tamanho_Reduzido_I: 'Halflings são criaturas Pequenas. Além de outros efeitos de tamanho, multiplique seus acertos de concussão por 0,75.',
+                Prodígio_Stalking_II: 'Halflings recebem um bônus de +10 em manobras de Perseguição (Stalking).'
+            }
+        },
+        {
+            nome: 'Hobgoblin',
+            descricao: `De tempos em tempos, os Goblins dão à luz filhotes incomumente grandes, que se tornarão adultos muito maiores, com a pele de um tom lamacento. Os Goblins evitam esse destino terrível matando a maioria deles ao nascer. Na idade adulta, o tamanho e a força superiores lhes conferem domínio sobre aqueles que reverenciam o domínio da força bruta.
+                    O brilho do sol, embora desagradável, não causa horror aos Hobgoblins, que seguem destemidamente seus inimigos durante o dia. Esses guerreiros astutos são bastante formidáveis no campo de batalha. Em princípio, a expectativa de vida dos hobgoblins é pelo menos equivalente à dos humanos, mas a maioria morre rapidamente pelas mãos de irmãos ambiciosos.`,
+            images: ['public/races/hobgoblin.png'],
+            detalhes: {
+                Visão_no_Escuro_II: 'Hobgoblins podem enxergar a 6 metros sem penalidades, mesmo na escuridão total.',
+                Visão_Noturna: 'Hobgoblins podem enxergar em penumbra tão bem quanto um humano enxerga à luz do dia. Todas as penalidades por escuridão são reduzidas em 40, exceto em escuridão total.',
+                Sensibilidade_à_Luz_I: 'Os hobgoblins sofrem uma penalidade de -25 quando expostos à luz intensa equivalente à luz solar direta, mas não sofrem penalidade em dias nublados ou em áreas sombreadas.'
+            }
+        },
+        {
+            nome: 'Humano da Caverna',
+            descricao: `Os homens das cavernas são os remanescentes isolados dos ancestrais dos homens comuns. Musculosos, com testas inclinadas e mandíbulas proeminentes, os homens das cavernas têm cabelos castanhos ou ruivos, olhos castanhos e pele bronzeada, mas são mais baixos que seus parentes comuns. Vestimentas simples feitas de peles de animais são o traje normal.
+                    Seu intelecto não é poderoso, mas sua disposição cooperativa e bem-humorada torna sua companhia uma experiência agradável. Os homens das cavernas se unem para formar tribos, cada uma com seu próprio conjunto complexo de rituais sociais e crenças religiosas. Sua expectativa de vida média é de 50 anos.`,
+            images: ['public/races/humano.png'],
+            detalhes: {
+                Sem_Talentos_Especiais: 'Os humanos da caverna não possuem talentos raciais especiais além de sua excepcional Resistência física (+25).'
+            }
+        },
+        {
+            nome: 'Humano Comum',
+            descricao: `Os homens comuns são da mesma raça que conhecemos no mundo real e apresentam as mesmas variações de tamanho, constituição física, cor da pele/cabelo e características faciais. Altamente adaptáveis, podem ser encontrados em praticamente qualquer clima ou ambiente e desenvolvem culturas bastante diversas.
+                    Os humanos são o padrão pelo qual todas as outras raças são comparadas. No entanto, os humanos se beneficiam de um alto número de Pontos de Desenvolvimento (DP) bônus.`,
+            images: ['public/races/humano.png'],
+            detalhes: {
+                Sem_Talentos_Especiais: 'Os humanos não possuem talentos ou defeitos raciais. São o padrão de referência do sistema, beneficiando-se do maior número de Pontos de Desenvolvimento bônus (50 DPs).'
+            }
+        },
+        {
+            nome: 'Humano Superior',
+            descricao: `Os homens superiores são mais altos e fortes do que os homens comuns, têm uma aparência mais imponente, vivem mais tempo e tendem a ser mais ousados e ambiciosos. Eles também são notoriamente rígidos e inflexíveis, não tão flexíveis ou adaptáveis quanto seus irmãos comuns, e mais facilmente influenciados por seu próprio orgulho ou pelo fascínio da magia e do poder.
+                    Eles constroem grandes impérios, mas esses impérios frequentemente entram em colapso de forma espetacular devido à sua própria arrogância. Podem ter o sangue de deuses ou gigantes, o que explicaria tanto sua força quanto seu orgulho.`,
+            images: ['public/races/humano.png'],
+            detalhes: {
+                Sem_Talentos_Especiais: 'Os humanos superiores não possuem talentos ou defeitos raciais especiais além de seus bônus de atributos superiores.'
+            }
+        },
+        {
+            nome: 'Humano Mestiço',
+            descricao: `Homens mestiços são descendentes de pais superiores e comuns. Eles têm características intermediárias e podem ser difíceis de distinguir de qualquer um dos parentes. Sociedades onde humanos superiores e comuns têm contato frequente podem ter populações significativas de homens mestiços.`,
+            images: ['public/races/humano.png'],
+            detalhes: {
+                Sem_Talentos_Especiais: 'Os humanos mestiços não possuem talentos ou defeitos raciais especiais além de seus bônus de atributos intermediários.'
+            }
+        },
+        {
+            nome: 'Hvasstonn',
+            descricao: `Também conhecidos como gigantes ou homens grandes, os Hvasstonn são semelhantes em muitos aspectos a humanos extremamente grandes, diferindo na altura (os homens têm em média 2,30 m), olhos profundos tão escuros que a pupila mal pode ser distinguida, pelos corporais curtos, grossos e grisalhos, quase tão espessos quanto pelagem, e dentes afiados de carnívoros.
+                    Clãs de Hvasstonn vivem próximos uns dos outros e, em tempos de necessidade, se ajudam mutuamente. Eles geralmente preferem empunhar uma arma em cada mão; devido ao seu tamanho, cada arma tem o tamanho de uma arma humana de duas mãos. Vivem até os 200 anos.`,
+            images: ['public/races/hvasstonn.png'],
+            detalhes: {
+                Tamanho_Aumentado_I: 'Os Hvasstonn são criaturas Grandes. Além de outros efeitos de tamanho, multiplique seus acertos de concussão por 1,5.',
+                Armamento_Natural: 'Os Hvasstonn podem atacar usando seus dentes afiados, utilizando a especialização Mordida da perícia Treinamento de Combate: Desarmado.',
+                Dieta_Restrita: 'Os Hvasstonn são carnívoros. Sua fome substancial precisa ser saciada com carne.'
+            }
+        },
+        {
+            nome: 'Idiyva',
+            descricao: `Uma pelagem curta, cor de café com pontas douradas, cobre o corpo esguio e musculoso do Idiyva, exceto no rosto, nas palmas das mãos e nas solas dos pés. A pelagem na cabeça se alonga e clareia, formando uma juba dourada ao redor do rosto. Olhos felinos verdes conferem ao Idiyva uma excelente visão noturna; dentes caninos revelam sua natureza carnívora.
+                    A sociedade Idiyva é competitiva e valoriza muito a honra pessoal. Não é incomum que desentendimentos sejam resolvidos por combates rituais. Embora os Idiyva possam ser amigáveis, eles não hesitam em revelar os instintos de luta de um predador que se escondem por trás de seus modos normalmente civilizados.`,
+            images: ['public/races/idiyva.png'],
+            detalhes: {
+                Audição_Felina: 'A audição dos Idiyva é equivalente à de um gato, permitindo-lhes ouvir alguns sons agudos e determinar com mais precisão a localização da fonte sonora (ganhando +10 em manobras de Percepção para localizar um som).',
+                Armas_Naturais: 'Os Idiyva podem atacar usando suas garras, utilizando a especialização Garras da perícia Treinamento de Combate: Desarmado.',
+                Visão_Noturna: 'Os Idiyva podem enxergar em penumbra tão bem quanto um humano enxerga à luz do dia. Reduzido em 40, exceto em condições de escuridão total.',
+                Dieta_Restrita: 'Os Idiyva são carnívoros e não obtêm sustento de alimentos que não sejam carne.'
+            }
+        },
+        {
+            nome: 'Kobold',
+            descricao: `Os menores entre as raças goblinoides, com pele avermelhada e um par de chifres crescendo em suas cabeças, os kobolds se curvam à ferocidade e ao bullying praticados por seus parentes maiores. As artes de mentir, trapacear, roubar e bajular permitem que o covarde kobold sobreviva na sanguinária sociedade goblin.
+                    Os kobolds raramente lutam em uma batalha direta. Eles esperam por uma oportunidade de emboscada, ou possivelmente esperam que a ajuda chegue se não puderem fugir. Um juramento de rendição, é claro, será rapidamente quebrado se a situação se inverter. Em princípio, eles são capazes de atingir uma expectativa de vida de 75 anos, mas poucos o fazem.`,
+            images: ['public/races/kobold.png'],
+            detalhes: {
+                Tamanho_Reduzido_I: 'Kobolds são criaturas Pequenas. Além de outros efeitos de tamanho, multiplique seus acertos de concussão por 0,75.',
+                Visão_no_Escuro_I: 'Kobolds podem enxergar a 3 metros sem penalidades, mesmo na escuridão total.',
+                Visão_Noturna: 'Kobolds podem enxergar em penumbra tão bem quanto um humano enxerga à luz do dia. Todas as penalidades por escuridão são reduzidas em 40, exceto em escuridão total.',
+                Sensibilidade_à_Luz_II: 'Kobolds sofrem uma penalidade de -50 quando expostos à luz solar direta, -25 em dias nublados ou -0 em áreas sombreadas ou dias muito nublados.',
+                Armas_Naturais_Ataque_Menor: 'Kobolds podem atacar usando suas garras, utilizando a especialização Garras da perícia Treinamento de Combate: Desarmado, mas tais ataques são considerados Minúsculos.'
+            }
+        },
+        {
+            nome: 'Nycamerith',
+            descricao: `Embora muitos se perguntem se são semelhantes a Gnomos ou até mesmo Halflings, esses seres baixos, gordos e de pele azul provavelmente constituem uma raça inteira por si só. Suas orelhas são grandes e pontudas, e seus olhos dançam ao ritmo da música que tocam continuamente. Vivendo suas longas vidas (até 600 anos) seguindo a Grande Canção, são um povo alegre e agradável, raramente se envolvendo em atos violentos.
+                    Os Nycamerith estão entre os maiores músicos e artesãos de instrumentos musicais do mundo. A maioria se contenta em entreter em tavernas e trabalhar em seus ofícios. Habitam vilarejos isolados, localizados em vales profundos ou em altas montanhas, mas viajam para se apresentar para um público que os aprecie.`,
+            images: ['public/races/nycamerith.png'],
+            detalhes: {
+                Garganta_de_Ouro: 'Os Nycamerith possuem belas vozes que acalmam e tranquilizam. Recebem +10 em qualquer manobra para acalmar ou persuadir verbalmente (Charme, Canto, Liderança, etc.).',
+                Audição_Gato: 'A audição dos Nycamerith é equivalente à de um gato, permitindo-lhes ouvir alguns sons agudos e determinar com mais precisão a localização da fonte sonora (+10 em manobras de Percepção para localizar um som).',
+                Tom_Perfeito_I: 'Os Nycamerith possuem ouvido perfeito e são capazes de reproduzir qualquer tom com sua voz ou um instrumento. Eles recebem +10 em qualquer habilidade de Arte Performática: Canto ou Tocar Instrumento. Não cumulativo com Garganta de Ouro.',
+                Não_Violento_II: 'Os Nycamerith não desejam ferir os outros. Após infligir um acerto crítico por qualquer meio, qualquer ação que realizarem na rodada seguinte sofre uma penalidade de -40.'
             }
         },
         {
             nome: 'Orc Maior',
-            descricao: '',
+            descricao: `Os orcs têm altura semelhante à dos humanos, embora possuam sobrancelhas e mandíbulas grossas em rostos arredondados, orelhas pontudas sem lóbulos, lábios finos que mal cobrem dentes grandes, narizes pequenos quase afilados e olhos pequenos e profundos. São de constituição robusta, pois são criados como guerreiros e trabalhadores.
+                    Os Orcs Maiores são resistentes e astutos, capazes de operar à luz do dia sem penalidades, e geralmente são os líderes das tribos orcs. Os orcs enxergam bem à noite e têm visão limitada mesmo na escuridão total.`,
+            images: ['public/races/orc.png'],
             detalhes: {
-                Stride: -0.3,
-                DP: 10
+                Visão_no_Escuro_I: 'Todos os Orcs podem enxergar a 3 metros sem penalidades, mesmo na escuridão total.',
+                Visão_Noturna: 'Todos os Orcs podem enxergar em penumbra tão bem quanto um humano enxerga à luz do dia. Todas as penalidades por escuridão são reduzidas em 40, exceto em escuridão total.',
+                Sensibilidade_à_Luz: 'Orcs Maiores não sofrem nenhuma penalidade à luz solar.'
+            }
+        },
+        {
+            nome: 'Orc Cinzento',
+            descricao: `Os Orcs Cinzentos são altamente inteligentes, embora usem essa genialidade para o mal e para as trevas. Muitos são conjuradores, especialmente feiticeiros, clérigos e magos. Eles costumam trabalhar em pequenos grupos com outros tipos de orcs. Embora sejam mais inteligentes que os Orcs Maiores, a sociedade orc é governada pelos fisicamente fortes, e os Orcs Cinzentos são mais propensos a aconselhar do que a governar.`,
+            images: ['public/races/orc.png'],
+            detalhes: {
+                Visão_no_Escuro_I: 'Todos os Orcs podem enxergar a 3 metros sem penalidades, mesmo na escuridão total.',
+                Visão_Noturna: 'Todos os Orcs podem enxergar em penumbra tão bem quanto um humano enxerga à luz do dia. Todas as penalidades por escuridão são reduzidas em 40, exceto em escuridão total.',
+                Sensibilidade_à_Luz: 'Orcs Cinzentos sofrem uma penalidade de -50 quando expostos à luz solar direta, -25 em dias nublados e nenhuma penalidade em condições de sombra ou em dias muito nublados.'
             }
         },
         {
             nome: 'Orc Menor',
-            descricao: '',
+            descricao: `Os Orcs Menores nascem para viver, lutar e morrer na escuridão; eles odeiam as estrelas e a lua, mas entram em pânico sob o sol mais brilhante. Eles compõem a maior parte da população orc. São os mais sensíveis à luz entre as raças orcs.`,
+            images: ['public/races/orc.png'],
             detalhes: {
-                Stride: -0.3,
-                DP: 10
+                Visão_no_Escuro_II: 'Orcs Menores podem enxergar a 4,5 metros sem penalidades, mesmo na escuridão total.',
+                Visão_Noturna: 'Todos os Orcs podem enxergar em penumbra tão bem quanto um humano enxerga à luz do dia. Todas as penalidades por escuridão são reduzidas em 40, exceto em escuridão total.',
+                Sensibilidade_à_Luz: 'Orcs Menores sofrem uma penalidade de -50 quando expostos à luz solar direta, -25 em dias nublados e nenhuma penalidade em condições de sombra ou em dias muito nublados.'
             }
         },
         {
             nome: 'Orc Scrug',
-            descricao: '',
+            descricao: `Os Scrugs são tão tolos quanto os Orcs Menores, mas se distinguem por seu grande tamanho. Frequentemente são confundidos com ogros ou trolls à distância. Embora a maioria não tenha inclinação para serem chefes, os Scrugs podem ser encontrados como guarda-costas de chefes orcs, embora não tenham consideração por nenhum outro ser vivo, nem mesmo por outros orcs.`,
+            images: ['public/races/orc.png'],
             detalhes: {
-                Stride: -0.3,
-                DP: 10
+                Visão_no_Escuro_II: 'Orcs Scrug podem enxergar a 4,5 metros sem penalidades, mesmo na escuridão total.',
+                Visão_Noturna: 'Todos os Orcs podem enxergar em penumbra tão bem quanto um humano enxerga à luz do dia. Todas as penalidades por escuridão são reduzidas em 40, exceto em escuridão total.',
+                Sensibilidade_à_Luz: 'Orcs Scrug sofrem uma penalidade de -50 quando expostos à luz solar direta, -25 em dias nublados e nenhuma penalidade em condições de sombra.',
+                Tamanho_Aumentado_I: 'Orcs Scrug são criaturas Grandes. Além de outros efeitos de tamanho, multiplique seus acertos de concussão por 1,5.'
             }
         },
         {
             nome: 'Orc Vard',
-            descricao: '',
+            descricao: `Os Vards são uma mutação de quatro braços dos Orcs Maiores, mas se mantêm entre os seus. Raramente são encontrados com outras raças de orcs. Os Vards são mais sensíveis à luz solar do que os Orcs Maiores, mas menos do que as outras raças. Os Vards podem usar com eficácia um escudo e três armas, quatro armas diferentes ou um par de armas de duas mãos.`,
+            images: ['public/races/orc.png'],
             detalhes: {
-                Stride: -0.3,
-                DP: 10
+                Visão_no_Escuro_I: 'Todos os Orcs podem enxergar a 3 metros sem penalidades, mesmo na escuridão total.',
+                Visão_Noturna: 'Todos os Orcs podem enxergar em penumbra tão bem quanto um humano enxerga à luz do dia. Todas as penalidades por escuridão são reduzidas em 40, exceto em escuridão total.',
+                Sensibilidade_à_Luz: 'Orcs Vard sofrem apenas uma penalidade de -25 em luz solar intensa.',
+                Ambidestro: 'Orcs Vard são capazes de usar qualquer uma de suas quatro mãos igualmente bem para todas as manobras e atividades. A penalidade normal de -20 para uso da mão secundária não se aplica.',
+                Par_de_Membros_Adicional: 'Orcs Vard possuem quatro braços. Os braços adicionais podem ser usados para manipular e realizar ataques com as penalidades usuais para ataques múltiplos. Um braço pode carregar um escudo.'
             }
         },
         {
             nome: 'Plynos',
-            descricao: '',
+            descricao: `A cabeça de um cervo majestoso ou de uma corça esguia adorna o corpo de um Humano, tornando este ser facilmente identificável como um Plynos. Os homens-cervo são herbívoros, mas os cervos, em particular, apreciam o combate e a batalha, desde que sejam nobres e honrados — eles não toleram crueldade ou violência sem sentido.
+                    Habitam cabanas de madeira de sua própria construção e geralmente vivem em clãs familiares. Os Elfos da Floresta são seus vizinhos preferidos. Sua expectativa de vida média é de 80 anos, e seus filhos atingem a maturidade vários anos mais cedo do que os Humanos.`,
+            images: ['public/races/plynos.png'],
             detalhes: {
-                Stride: -0.3,
-                DP: 10
+                Olfato_Aguçado_II: 'Os Plynos recebem um bônus de +10 em testes de Percepção envolvendo olfato.',
+                Audição_Felina: 'A audição dos Plynos é equivalente à de um gato, permitindo-lhes ouvir alguns sons agudos e determinar com mais precisão a localização da fonte sonora (+10 em manobras de Percepção para localizar um som).',
+                Dieta_Restrita: 'Os Plynos são herbívoros e não conseguem digerir carne.',
+                Armas_Naturais: 'Muitos Plynos machos possuem chifres poderosos o suficiente para atacar, utilizando a especialização em chifres da perícia Treinamento de Combate: Desarmado. Pode ser adquirida por 5 DP.'
             }
         },
         {
             nome: 'Sea-kral',
-            descricao: '',
+            descricao: `Os Sea-krals são criaturas semelhantes a macacos, com pele cinza-escura ou azul e uma densa pelagem branca que cresce na cabeça, pescoço e ombros. Ambos os sexos têm braços longos e um osso extra que conecta o pulso à mão. Dedos longos e ágeis, com unhas em forma de garra, os auxiliam a se tornarem artesãos e arqueiros habilidosos.
+                    Os Sea-krals temem as ondas famintas, mas encontram tanto prazer em seu estilo de vida violento que não conseguem abandonar o oceano. Eles constroem navios longos para navegar pelos mares, saqueando e pilhando outras embarcações como piratas. Dormem durante o dia e são ativos durante a noite.`,
+            images: ['public/races/sea-kral.png'],
             detalhes: {
-                Stride: -0.3,
-                DP: 10
+                Visão_Noturna: 'Os Sea-krals podem enxergar na penumbra tão bem quanto um humano enxerga à luz do dia. Todas as penalidades por escuridão são reduzidas em 40, exceto em escuridão total.',
+                Articulações_Extras: 'Os braços dos Sea-kral possuem múltiplas articulações e são ágeis. Todas as manobras físicas que dependem principalmente de seus braços, incluindo combate corpo a corpo, arremesso e escalada, recebem um bônus de +10.',
+                Inepto_II_Natação: 'Os Sea-kral são pouco adaptados para natação e sofrem uma penalidade de -10 em todas as manobras de natação.'
             }
         },
         {
             nome: 'Sibbicai',
-            descricao: '',
+            descricao: `Provavelmente parentes distantes dos Vulfen, os Sibbicai possuem cabeça de chacal e pelagem curta, lisa e oleosa, de cor preta, que cobre seus corpos humanoides musculosos. Um povo inteligente e culto, os Sibbicai se adaptam bem a outras raças humanoides, desde que estas não tenham preconceitos.
+                    Os Sibbicai são geralmente quietos e reservados, mas se irritam facilmente. Em batalha, usam armaduras e uma variedade de armas. Grupos de Sibbicai frequentemente se oferecem como mercenários, mas seus serviços são muito caros. Uma vez contratados, sua reputação de lealdade e cumprimento de promessas é bem justificada.`,
+            images: ['public/races/sibbicai.png'],
             detalhes: {
-                Stride: -0.3,
-                DP: 10
+                Olfato_Aguçado_III: 'Os Sibbicai recebem um bônus de +15 em testes de Percepção envolvendo olfato.',
+                Audição_Canina: 'Os Sibbicai têm uma audição tão sensível quanto a de um cão, permitindo-lhes localizar sons próximos com alta precisão e ouvir sons até 4 vezes mais distantes que um humano. Isso concede +10 em manobras de Percepção baseadas em som.',
+                Armas_Naturais: 'Os Sibbicai podem atacar mordendo, usando a especialização Mordida da perícia Treinamento de Combate: Desarmado.',
+                Prodígio_II_Tracking: 'Os Sibbicai possuem um talento natural para rastreamento. Eles recebem um bônus de +10 em manobras de Rastreamento.'
             }
         },
         {
             nome: 'Sohleugir',
-            descricao: '',
+            descricao: `Escamas texturizadas de jade brilham na pele do anfíbio Sohleugir, interrompidas por cristas semelhantes a barbatanas que se elevam ao longo da espinha dorsal. Esses espinhos irregulares estendem-se da ponta da cauda de quase um metro até o topo da cabeça dracônica com focinho.
+                    Os Sohleugir constroem cidades intrincadas de pedra, corais e conchas em costas rochosas próximas ao oceano. Eles cultivam as ondas como um agricultor lavra a terra. Os Sohleugir são um povo guerreiro, ávido por testar as pontas de seus tridentes e a coragem de seus espíritos, mas a crueldade permanece ausente de sua paixão pelo combate.`,
+            images: ['public/races/sohleugir.png'],
             detalhes: {
-                Stride: -0.3,
-                DP: 10
+                Armadura_Natural_III: 'As escamas dos Sohleugir fornecem a proteção de um tipo de armadura (AT) 4 contra ataques, sem penalidades de carga ou manobra.',
+                Armas_Naturais: 'Os Sohleugir podem atacar com suas garras, usando a especialização em garras da perícia Treinamento de Combate: Desarmado.',
+                Visão_de_Lagartixa: 'Os olhos dos Sohleugir funcionam como os de uma lagartixa. Não perdem a visão de cores em condições de escuridão. Recebem um bônus de +10 em todas as manobras de Percepção baseadas na visão.',
+                Visão_Tetracromática: 'A visão dos Sohleugir abrange a visão de cores normal, bem como a sensibilidade à luz ultravioleta. As penalidades para detectar pessoas e objetos invisíveis e camuflados são reduzidas em 30.',
+                Terceira_Pálpebra: 'Os olhos dos Sohleugir possuem uma pálpebra adicional transparente que os protege, permitindo ainda a visão. Não são afetados por poeira, areia ou água.'
             }
         },
         {
-            nome: 'Sstoi’isslythi',
-            descricao: '',
+            nome: "Sstoi'isslythi",
+            descricao: `Homens esguios que se movem com a graça sinuosa de serpentes, os Sstoi'isslythi possuem peles macias de réptil compostas por pequenas escamas douradas. Bolsas de veneno, localizadas no pescoço, fornecem veneno às presas carnudas retraídas em suas bocas. Os Sstoi'isslythi vivem em grupos familiares, cada membro imune ao veneno de seus parentes.
+                    Dependentes do ambiente para se aquecerem, os Sstoi'isslythi habitam climas ensolarados que nunca experimentam o frio do inverno. Amplos terraços para relaxar no calor e claraboias para aquecer os espaços internos dominam suas elegantes cidades.`,
+            images: ['public/races/sstoi-isslythi.png'],
             detalhes: {
-                Stride: -0.3,
-                DP: 10
+                Sensibilidade_Térmica: 'Os Sstoi\'isslythi possuem órgãos sensoriais muito sensíveis em seus rostos, que lhes permitem avaliar a temperatura a curta distância com precisão de até 1/1000 de grau. Isso lhes concede um bônus de até +20 em testes de Percepção e Rastreamento para detectar criaturas vivas.',
+                Armas_Naturais: "Os Sstoi'isslythi podem atacar com suas presas, usando a especialização Mordida da perícia Treinamento de Combate: Desarmado. Os ataques são resolvidos na tabela Ferrão.",
+                Injeção_de_Veneno: "A mordida de um Sstoi'isslythi injeta veneno. Se o ataque resultar em um acerto crítico, o alvo deve fazer um Teste de Resistência Física ou sofrer o efeito de um veneno muscular.",
+                Reflexo_de_Ataque: "Um poderoso reflexo de ataque permite que o Sstoi'isslythi aja com tremenda velocidade, ganhando um modificador de iniciativa de +20, quando o reflexo é acionado por qualquer movimento repentino em direção a ele. O Sstoi'isslythi deve tomar uma ação ofensiva imediata na rodada em que for surpreendido."
             }
         },
         {
             nome: 'Troll',
-            descricao: '',
+            descricao: `Os trolls são grandes e imensamente fortes (geralmente com cerca de 2,7 metros de altura e constituição maciça), mas mentalmente lentos em comparação com a maioria das outras raças. Os trolls são cobertos por uma pele grossa e dura que se sobrepõe nas articulações, semelhante à pele de um rinoceronte.
+                    Os trolls não suportam a luz do dia, sofrendo uma penalidade de -50 em todas as ações sob a luz solar intensa. Suas vantagens inatas em situações físicas ou de combate, juntamente com mentes um tanto fracas e aparências aterrorizantes, tendem a fazer com que muitos trolls vivam suas vidas além dos limites da civilização.`,
+            images: ['public/races/troll.png'],
             detalhes: {
-                Stride: -0.3,
-                DP: 10
+                Visão_no_Escuro_I: 'Os trolls enxergam a 3 metros sem penalidades, mesmo na escuridão completa.',
+                Inepto_Influência_V: 'Por natureza e reputação, os trolls são violentos e perigosos. Eles sofrem uma penalidade de -25 em qualquer tentativa de usar perícias de Influência, exceto para provocar uma reação de medo ou moral.',
+                Tamanho_Aumentado_I: 'Os trolls são criaturas Grandes. Além dos outros efeitos de tamanho, multiplique seus acertos de concussão por 1,5.',
+                Sensibilidade_à_Luz_II: 'Os trolls sofrem uma penalidade de -50 quando expostos à luz solar direta, -25 em dias nublados ou -0 em áreas sombreadas.',
+                Armadura_Natural_III: 'A pele resistente de um troll fornece a proteção de um tipo de armadura (AT) 4 contra ataques, sem penalidades de carga ou manobra.',
+                Armamento_Natural: 'Os trolls podem atacar com suas garras, usando a especialização em garras da perícia Treinamento de Combate: Desarmado.',
+                Visão_Noturna: 'Os trolls enxergam em penumbra tão bem quanto um humano enxerga à luz do dia. Todas as penalidades por escuridão são reduzidas em 40, exceto em condições de escuridão total.',
+                Resistência_Elemental_Frio_e_Calor_III: 'Os trolls recebem um bônus de +15 em Defesa, Resistência e Vigor contra frio, gelo, calor e fogo. A severidade dos acertos críticos de Frio e Calor é reduzida em um.'
             }
         },
         {
             nome: 'Vulfen',
-            descricao: '',
+            descricao: `Homens peludos com cabeças e caudas lupinas, os Vulfen são frequentemente confundidos com lobisomens. A astúcia molda o comportamento dos Vulfen, mas a crueldade e a sede de sangue os privam do respeito e da admiração dos humanos. Os Vulfen vivem em matilhas, matando e devorando tudo em seu caminho. São noturnos, dormindo durante o dia e devastando à noite.
+                    Suas vidas são brutais, mas geralmente curtas, raramente ultrapassando os 40 anos. Os Vulfen expulsos de suas matilhas, geralmente por um desafio fracassado contra seus superiores, ocasionalmente encontram um lar em unidades mercenárias.`,
+            images: ['public/races/vulfen.png'],
             detalhes: {
-                Stride: -0.3,
-                DP: 10
+                Olfato_Aguçado_II: 'Os Vulfen recebem um bônus de +10 em testes de Percepção que envolvam olfato.',
+                Audição_Canina: 'Os Vulfen possuem uma audição tão sensível quanto a de um cão, permitindo-lhes localizar sons próximos com alta precisão e ouvir sons até 4 vezes mais distantes que um humano. Isso concede +10 em manobras de Percepção baseadas em som.',
+                Armamento_Natural: 'Os Vulfen podem atacar com suas garras, usando a especialização em garras da perícia Treinamento de Combate: Desarmado.',
+                Dieta_Restrita: 'Os Vulfen são carnívoros e não obtêm sustento de alimentos que não sejam carne.',
+                Frenesi: 'Os Vulfen podem entrar em fúria frenética com uma manobra de Foco Adrenal bem-sucedida. Enquanto em frenesi, recebem +5 em Força, seus ataques são considerados como +1 em Tamanho e não sofrem penalidades por perda de acertos. Em vez de desmaiarem com 0 Pontos de Vida, continuam lutando até atingirem um número negativo igual à sua perícia Desenvolvimento Corporal. Uma vez inconscientes, eles devem fazer um Teste de Resistência Física a cada rodada até falharem (e morrerem) ou serem curados o suficiente para ficarem acima desse limite. Enquanto em frenesi, eles não recebem nenhum Bônus Defensivo além daquele devido à magia e são incapazes de alocar OB para aparar ataques. Além disso, eles sempre atacarão a criatura mais próxima (um teste de Percepção médio é necessário para distinguir amigo de inimigo) e uma manobra de Foco Adrenal é necessária para sair da fúria frenética. Se não houver mais alvos animados para atacar, eles destruirão qualquer outra coisa ao seu alcance até serem nocauteados ou realizarem uma manobra bem-sucedida para sair do frenesi.'
             }
-        }
-    ],
+        },
+    ], //ok
     'Culturas': [
         {
             nome: 'Overview',
@@ -712,7 +804,198 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             images: ['public/tabela-ganho-stats.png',]
         }
     ], //ok
-    'Perícias': [],
+    'Perícias': [
+        {
+            nome: 'Overview',
+            descricao: `Um personagem é amplamente definido por suas habilidades, que definem o que ele sabe e o quão bem ele sabe. Habilidades podem ser praticadas e aprimoradas ao longo do tempo, embora eventualmente cheguem a um ponto de retorno decrescente, onde recebem melhorias menores pela mesma quantidade de esforço.
+                        As habilidades estão listadas de acordo com categorias temáticas na Tabela 3-0a. Todas as habilidades dentro de uma categoria (exceto Treinamento de Combate e Conjuração) têm o mesmo custo em Pontos de Desenvolvimento, bônus de atributos da categoria e, frequentemente, um método de resolução compartilhado. Além dos bônus de atributos da categoria, cada habilidade possui seu próprio atributo, que também é adicionado ao total da habilidade (por exemplo, Adestramento de Animais adiciona os bônus de Agilidade e Empatia da categoria, além de Presença para a habilidade). Algumas habilidades exigem especialização ao serem desenvolvidas, que pode ser desenvolvida para múltiplas especializações (por exemplo, ’Montaria’ é desenvolvida como ’Montaria: Cavalo’ ou ’Montaria: Águia Gigante’, e cada uma é aprendida como se fosse uma habilidade separada).
+                        As habilidades incluídas são aquelas que serão comuns na maioria das campanhas. Algumas ambientações podem ter novas perícias, ou não usar outras, mais comumente nas categorias de Artesanato e Conhecimento, onde artesanato, idiomas e conhecimentos dependem fortemente da ambientação e do ambiente. As perícias em si não pretendem ser uma lista completa ou exaustiva; no entanto, as categorias são suficientemente gerais para que qualquer nova perícia possa ser adicionada a uma categoria existente.`,
+            images: ['public/tabela 3-0A.png'],
+        },
+        {
+            nome: 'Desenvolvimento de Perícias',
+            descricao: `Os personagens recebem 60 Pontos de Desenvolvimento (DP) para gastar a cada nível, começando no nível 1. Em níveis mais baixos, bônus adicionais de DP podem estar disponíveis de acordo com a raça do personagem. O custo para desenvolver uma perícia é determinado pela profissão do personagem.
+                        Os custos de perícia são fornecidos para cada profissão (Seção 2.4). Cada perícia é listada com dois custos separados por uma barra (por exemplo, “5/7”). O primeiro custo é o preço em Pontos de Desenvolvimento (DP) para aprender um único ponto de uma perícia em um determinado nível. O segundo custo é o preço em DP para aprender um segundo ponto durante o mesmo nível. Não mais do que dois pontos de uma determinada perícia podem ser adquiridos a cada nível. Algumas perícias possuem especializações que são listadas ao final da descrição da perícia. A perícia é aprendida em uma dessas especializações e múltiplas especializações podem ser adquiridas pelo mesmo custo, como se fossem perícias diferentes.`,
+
+        },
+        {
+            nome: 'Bônus de Perícia',
+            descricao: ``
+        },
+        {
+            nome: 'Perícias Similares',
+            descricao: ``
+        },
+        {
+            nome: 'Perícias Complementares',
+            descricao: ``
+        },
+        {
+            nome: 'Perícias Conflitantes',
+            descricao: ``
+        },
+        {
+            nome: 'Animal',
+            descricao: ``,
+            images: [],
+            detalhes: {
+                Animal_Handling: '',
+                Riding: ''
+            }
+        },
+        {
+            nome: 'Awareness',
+            descricao: ``,
+            images: [],
+            detalhes: {
+                Perception: '',
+                Tracking: ''
+            }
+        },
+        {
+            nome: 'Battle Expertise',
+            descricao: ``,
+            images: [],
+            detalhes: {
+                Maneuvering_in_Armor: '',
+                Mounted_Combat: '',
+                Protect: '',
+                Restricted_Quarters: '',
+                Subduing: ''
+            }
+        },
+        {
+            nome: 'Body Discipline',
+            descricao: ``,
+            images: [],
+            detalhes: {
+                Adrenal_Defense: '',
+                Adrenal_Focus: '',
+                Adrenal_Speed: '',
+                Adrenal_Strength: '' 
+            }
+        },
+        {
+            nome: 'Brawn',
+            descricao: ``,
+            images: [],
+            detalhes: {}
+        },
+        {
+            nome: 'Combat Training',
+            descricao: ``,
+            images: [],
+            detalhes: {}
+        },
+        {
+            nome: 'Composition',
+            descricao: ``,
+            images: [],
+            detalhes: {}
+        },
+        {
+            nome: 'Crafting',
+            descricao: ``,
+            images: [],
+            detalhes: {}
+        },
+        {
+            nome: 'Delving',
+            descricao: ``,
+            images: [],
+            detalhes: {}
+        },
+        {
+            nome: 'Environmental',
+            descricao: ``,
+            images: [],
+            detalhes: {}
+        },
+        {
+            nome: 'Gymnastic',
+            descricao: ``,
+            images: [],
+            detalhes: {}
+        },
+        {
+            nome: 'Lore',
+            descricao: ``,
+            images: [],
+            detalhes: {}
+        },
+        {
+            nome: 'Magical Expertise',
+            descricao: ``,
+            images: [],
+            detalhes: {}
+        },
+        {
+            nome: 'Medical',
+            descricao: ``,
+            images: [],
+            detalhes: {}
+        },
+        {
+            nome: 'Mental Discipline',
+            descricao: ``,
+            images: [],
+            detalhes: {}
+        },
+        {
+            nome: 'Movement',
+            descricao: ``,
+            images: [],
+            detalhes: {}
+        },
+        {
+            nome: 'Performance Art',
+            descricao: ``,
+            images: [],
+            detalhes: {}
+        },
+        {
+            nome: 'Power Manipulation',
+            descricao: ``,
+            images: [],
+            detalhes: {}
+        },
+        {
+            nome: 'Science',
+            descricao: ``,
+            images: [],
+            detalhes: {}
+        },
+        {
+            nome: 'Social',
+            descricao: ``,
+            images: [],
+            detalhes: {}
+        },
+        {
+            nome: 'Spellcasting',
+            descricao: ``,
+            images: [],
+            detalhes: {}
+        },
+        {
+            nome: 'Subterfuge',
+            descricao: ``,
+            images: [],
+            detalhes: {}
+        },
+        {
+            nome: 'Technical',
+            descricao: ``,
+            images: [],
+            detalhes: {}
+        },
+        {
+            nome: 'Vocation',
+            descricao: ``,
+            images: [],
+            detalhes: {}
+        }
+    ],
     'Talentos': [],
     'Manobras': [],
     'Equipamentos': [],
