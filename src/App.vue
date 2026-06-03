@@ -133,7 +133,7 @@ export default defineComponent({
         },
         pericias: [
           {
-            nome: 'Animal', atribs: 'Ag+Me', atribBonus: 0, custo: '', pericias: [
+            nome: 'Animal', atribs: 'Ag+Em', atribBonus: 0, custo: '', pericias: [
               { id: 'an1', prof: false, nome: 'Animal Handling', nvsCult: 0, atribMod: 'Pr', atribBonus: 0, totalNiveis: 0, bonusNivel: 0, bonusProf: 0, especApt: 0, bonusTotal: 0, custo: '', isEspecializacao: false },
               { id: 'an2', prof: false, nome: 'Riding', nvsCult: 0, atribMod: 'Pr', atribBonus: 0, totalNiveis: 0, bonusNivel: 0, bonusProf: 0, especApt: 0, bonusTotal: 0, custo: '', isEspecializacao: false }
             ]
