@@ -143,7 +143,7 @@ export default defineComponent({
             const novaEspec: Pericia = {
                 id: Math.random().toString(36).substr(2, 9),
                 prof: false,
-                nome: `↳ Nova Especialização`,
+                nome: ``,
                 nvsCult: 0,
                 atribMod: parent.atribMod,
                 atribBonus: 0,

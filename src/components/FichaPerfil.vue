@@ -27,13 +27,17 @@
                         </div>
                         <div>
                             <span class="text-slate-500 block text-xs uppercase font-bold">Altura</span>
-                            <input type="number" step="0.1" min="0.3" v-model="ficha.altura"
+                            <span
                                 class="w-full font-medium outline-none border-b border-slate-200 focus:border-indigo-300">
+                                {{ ficha.altura }}
+                            </span>
                         </div>
                         <div>
                             <span class="text-slate-500 block text-xs uppercase font-bold">Peso</span>
-                            <input type="number" step="0.10" min="0.5" v-model="ficha.peso"
+                            <span
                                 class="w-full font-medium outline-none border-b border-slate-200 focus:border-indigo-300">
+                                {{ ficha.peso }}
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -43,9 +47,9 @@
                     <div class="p-4 space-y-3 text-sm">
                         <div class="flex items-center justify-center gap-1">
                             <label class="text-slate-500 text-xs uppercase font-bold">Raça</label>
-                            <select v-model="ficha.raca"
+                            <select v-model="ficha.raca" @change="aplicarMediasRaciais"
                                 class="w-full border-b border-slate-200 outline-none bg-transparent py-1">
-                                <option v-for="r in listaRacas" :key="r" :value="r">{{ r}}</option>
+                                <option v-for="r in listaRacas" :key="r" :value="r">{{ r }}</option>
                             </select>
                         </div>
 
