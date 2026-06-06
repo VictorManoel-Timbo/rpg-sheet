@@ -94,7 +94,11 @@ export interface FichaPersonagem {
     nivel: number;
     dp: number;
     dpGasto?: number;
-    
+
+    vidaAtual: number;
+    vigorAtual: number;
+    poderAtual: number;
+
     strideMod: number;
 
     imagemUrl?: string;

@@ -4,7 +4,7 @@
             <div class="bg-white p-3 rounded-xl border text-red-600 border-slate-200 shadow-sm text-center">
                 <span class="block text-sm font-bold text-slate-500 uppercase">Vida</span>
                 <div class="flex">
-                    <input type="number" v-model.number="vida"
+                    <input type="number" v-model.number="ficha.vidaAtual"
                         class="w-full text-center text-xl font-black outline-none"> 
                         /
                     <input type="number" v-model.number="ficha.vida" readonly
@@ -14,7 +14,7 @@
             <div class="bg-white p-3 rounded-xl border text-teal-600 border-slate-200 shadow-sm text-center">
                 <span class="block text-sm font-bold text-slate-500 uppercase">Poder</span>
                 <div class="flex">
-                    <input type="number" v-model.number="poder"
+                    <input type="number" v-model.number="ficha.poderAtual"
                         class="w-full text-center text-xl font-black outline-none"> 
                         /
                     <input type="number" v-model.number="ficha.poder" readonly
@@ -24,7 +24,7 @@
             <div class="bg-white p-3 rounded-xl border text-slate-700 border-slate-200 shadow-sm text-center">
                 <span class="block text-sm font-bold text-slate-500 uppercase">Vigor</span>
                 <div class="flex">
-                    <input type="number" v-model.number="vigor"
+                    <input type="number" v-model.number="ficha.vigorAtual"
                         class="w-full text-center text-xl font-black outline-none">
                     /
                     <input type="number" v-model.number="ficha.vigor" readonly
