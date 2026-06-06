@@ -50,13 +50,13 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             descricao: `Esta seção fornece uma ampla variedade de exemplos de raças, variando em estatura e habilidades inatas, como força, velocidade, resistência ou resistência/suscetibilidade à magia. Essas raças incluem aquelas extraídas da literatura fantástica e as raças mais comuns em jogos de RPG de fantasia, bem como outras extraídas da história de Rolemaster. Um Mestre de Jogo deve examinar cada raça cuidadosamente antes de incluí-la em sua campanha — nem todas essas raças são adequadas para todos os cenários, e algumas podem ser mais apropriadas como NPCs e adversários do que como personagens jogadores.
                         A raça de um personagem pode conceder bônus ou penalidades aos bônus de atributos, testes de Resistência, acertos, testes de Vigor e modificar o tempo de recuperação. Algumas raças têm talentos ou defeitos especiais que conferem a todos os personagens da raça uma habilidade ou desvantagem especial que não é representada por simples bônus ou penalidades; Essas características são resumidas nas descrições das raças.
                         Cada raça fornece uma reserva de Pontos de Desenvolvimento bônus na criação do personagem. Até 25 desses pontos podem ser gastos por nível em talentos ou aprimoramento deperícias durante o desenvolvimento de nível.`,
-            images: ['public/racas-bonus.png']
+            images: ['/public/racas-bonus.png']
         },
         {
             nome: 'Avinarc',
             descricao: `Um capuz retirado de um estranho de manto escuro no canto mais afastado de uma taverna pode revelar um Avinarc, com sua cabeça semelhante à de um falcão e sua pele coberta de penas. As outrora poderosas asas do Avinarc tornaram-se braços com mãos hábeis. Apenas suas cabeças e penas os denunciam como não humanos.
                     Outrora uma raça orgulhosa e nobre, com terras e nações próprias, esse povo-pássaro viu seu número diminuir lentamente devido a uma poderosa maldição lançada sobre eles em eras passadas. Uma antiga profecia afirma que os Avinarcs um dia superarão a maldição e ressurgirão em número e poder. Agora são reclusos, misturando-se silenciosamente à sociedade humana, muitas vezes envolvendo-se com o lado mais sombrio da humanidade. Usam sua rapidez e agilidade aviárias para auxiliá-los em roubos e trapaças.`,
-            images: ['public/races/avinarc.png'],
+            images: ['/public/races/avinarc.png'],
             detalhes: {
                 Olfato_Aguçado_II: 'Os Avinarcs recebem um bônus de +10 em testes de Percepção envolvendo olfato.',
                 Ossos_Leves_I: 'Os Avinarcs são tratados como criaturas Pequenas para fins de seus acertos (determine normalmente e multiplique por 0,75) e ataques contra eles, mas não para outros fins.',
@@ -70,7 +70,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             nome: 'Anão',
             descricao: `Provavelmente a raça fisicamente mais resistente, os Anãos são baixos, atarracados e de tez rosada, com olhos profundos e cabelos e barbas escuros e crespos (dos quais se orgulham bastante, cultivando longas e elaboradas tranças). Os Anãos são artesãos exímios e bem adaptados à vida subterrânea; adoram minerar a terra em busca de metais e pedras preciosas, transformando-os em armas e artefatos poderosos. Não tão férteis quanto os humanos, têm poucos filhos, e menos de um terço de sua população é composta por mulheres, que são zelosamente protegidas em seus salões cavernosos.
                     Os Anãos possuem visão no escuro superior, sendo capazes de enxergar excepcionalmente bem na penumbra e a curtas distâncias mesmo na escuridão total. São ligeiramente mais densos que os humanos, o que torna a natação mais difícil, mas não impossível (-25 em testes de Resistência ao nadar). Possuem considerável resistência à magia da Essência e do Mentalismo. Os Anãos são muito resistentes a venenos e doenças, e possuem uma expectativa de vida excepcional, de até 600 anos.`,
-            images: ['public/races/anao.png'],
+            images: ['/public/races/anao.png'],
             detalhes: {
                 Visão_no_Escuro_I: 'Os Anãos podem enxergar a 3 metros de distância sem penalidades, mesmo na escuridão total.',
                 Inapto_V_Natação: 'Devido à sua densidade, os Anãos precisam se esforçar muito para não se afogarem. Eles sofrem uma penalidade de -25 nos testes de Resistência enquanto nadam.',
@@ -81,7 +81,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             nome: 'Elfo Belo',
             descricao: `Os mais etéreos de todos os elfos, os Elfos Belos têm cabelos dourados, olhos azuis, pele pálida e preferem vestimentas brancas, prateadas e douradas. Seja por graça divina ou herança feérica, eles possuem uma aura visível que impressiona aliados e intimida inimigos. Raramente são vistos além das fronteiras das terras élficas.
                     Como todos os elfos, não envelhecem após a idade adulta e seus corpos são imunes a todas as infecções bacterianas e virais não mágicas, sendo virtualmente imortais. Sua visão é extremamente aguçada; conseguem enxergar em uma noite clara como se estivessem em plena luz do dia.`,
-            images: ['public/races/elfo.png'],
+            images: ['/public/races/elfo.png'],
             detalhes: {
                 Sono_Eficiente_II: 'Elfos meditam em vez de dormir. Duas horas de meditação substituem quatro horas de sono.',
                 Imunidade_a_Doenças_I: 'Elfos são imunes a todas as doenças não mágicas.',
@@ -94,7 +94,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             nome: 'Elfo Cinzento',
             descricao: `Os Elfos Cinzentos são quase sempre intermediários entre seus irmãos mais extremos. A maioria tem cabelos loiros e olhos azuis ou cinzentos. Não são tão artísticos quanto os elfos loiros, tão astutos e industriosos quanto os altos elfos, ou tão serenos e rústicos quanto os elfos da floresta. Formam o meio-termo com sua companhia agradável e seu amor pela arte e pelo artesanato.
                     Quando a guerra chama, eles pegam em armas, mas na maior parte do tempo se estabelecem, criam uma família e fazem o que bem entendem. Não constroem cidades de mármore, mas amam cidades abertas em meio a uma bela paisagem. Compartilham as características gerais élfica de imortalidade e imunidade a doenças não mágicas.`,
-            images: ['public/races/elfo.png'],
+            images: ['/public/races/elfo.png'],
             detalhes: {
                 Sono_Eficiente_II: 'Elfos meditam em vez de dormir. Duas horas de meditação substituem quatro horas de sono.',
                 Imunidade_a_Doenças_I: 'Elfos são imunes a todas as doenças não mágicas.',
@@ -105,7 +105,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             nome: 'Elfo Alto',
             descricao: `Cabelos negros como azeviche distinguem os Altos Elfos de seus parentes de pele mais clara, e olhos castanhos e avelã são as cores mais comuns. O amor por coisas belas, expresso pela habilidade em construção e artesanato, une-se à curiosidade sobre a natureza de toda a criação. As armaduras magníficas, as armas brilhantes e as belas joias veneradas em suas graciosas cidades de muralhas de mármore parecem justificar o preço.
                     Alguns dos artefatos mais poderosos que se conhece provêm das forjas desses artesãos élficos. Quando vivem entre outros elfos, inspiram-se nos Elfos Belos, mas aceitam de bom grado o fardo diário de governar seu povo. Compartilham as características gerais élfica de imortalidade e imunidade a doenças não mágicas.`,
-            images: ['public/races/elfo.png'],
+            images: ['/public/races/elfo.png'],
             detalhes: {
                 Sono_Eficiente_II: 'Elfos meditam em vez de dormir. Duas horas de meditação substituem quatro horas de sono.',
                 Imunidade_a_Doenças_I: 'Elfos são imunes a todas as doenças não mágicas.',
@@ -116,7 +116,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             nome: 'Elfo da Floresta',
             descricao: `Os Elfos da Floresta vestem tons de verde e cinza para se camuflarem com o ambiente. Cabelos cor de areia e olhos azuis claros, verdes ou cinzentos complementam sua aparência rústica. Eles são ligeiramente mais baixos que outros elfos, embora mais altos que os humanos. Esses elfos são os mais comuns de toda a raça élfica e podem ser encontrados em quase todas as florestas do mundo.
                     Os Elfos da Floresta costumam ser bastante distantes de outros elfos e são conhecidos por discordar abertamente das políticas dos Altos Elfos e dos Elfos Belos. Mais sintonizados com as sutis marés das florestas, riachos e criaturas que vagam pelo reino silvestre, os Elfos da Floresta são hábeis em se mover silenciosamente.`,
-            images: ['public/races/elfo.png'],
+            images: ['/public/races/elfo.png'],
             detalhes: {
                 Sono_Eficiente_II: 'Elfos meditam em vez de dormir. Duas horas de meditação substituem quatro horas de sono.',
                 Imunidade_a_Doenças_I: 'Elfos são imunes a todas as doenças não mágicas.',
@@ -128,7 +128,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             nome: 'Gnoll',
             descricao: `Pequenas figuras enrugadas de pele cinzenta e pouco cabelo, os Gnolls habitam as cavernas naturais que abundam nas regiões montanhosas. Quando protegidos pelo segredo e pela pedra, seu temperamento tímido relaxa e permite a celebração de festivais alegres. A luz do sol não os fere, mas o brilho os assusta e faz seus olhos lacrimejarem (-25 em todas as atividades), levando os Gnolls a preferirem o reino subterrâneo.
                     A maioria dos Gnolls evita o combate, usando suas magias para se esconder e escapar rapidamente. Sua habilidade como ilusionistas, praticantes e magos lhes permite evitar encontros com outras raças. Eles viajam em clãs e se estabelecem apenas em grutas desertas. Os Gnolls vivem em média 105 anos.`,
-            images: ['public/races/gnoll.png'],
+            images: ['/public/races/gnoll.png'],
             detalhes: {
                 Tamanho_Reduzido_I: 'Gnolls são criaturas Pequenas. Além de outros efeitos de tamanho, multiplique seus impactos de concussão por 0,75.',
                 Visão_Noturna: 'Os gnolls podem enxergar em penumbra tão bem quanto um humano enxerga à luz do dia. Todas as penalidades por escuridão são reduzidas em 40, exceto em escuridão total.',
@@ -141,7 +141,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             nome: 'Gnomo',
             descricao: `Menores que os anões, e com aparência mais frágil e debilitada, os longevos Gnomos preferem viver em cavernas rasas, onde acumulam conhecimento e sabedoria obsessivamente. Tomos antigos e pergaminhos raros povoam suas bibliotecas abarrotadas. O amor pela solidão garante que a maioria dos Gnomos permaneça sem herdeiros, raramente casando ou constituindo família, apesar da expectativa de vida típica de 600 anos.
                     Os Gnomos são reservados, mas se forçados a combater, seus inimigos devem estar preparados para uma surpresa, pois não se sabe quais feitiços e/ou artefatos mágicos um Gnomo específico possui. Embora solitários, os Gnomos não são tímidos nem tristes; a generosa hospitalidade atrai muitos amigos que os visitam como hóspedes.`,
-            images: ['public/races/gnomo.png'],
+            images: ['/public/races/gnomo.png'],
             detalhes: {
                 Visão_Noturna: 'Os gnomos podem enxergar em penumbra, equivalente às condições noturnas, tão bem quanto um humano enxerga à luz do dia. Todas as penalidades por escuridão são reduzidas em 40, exceto em condições de escuridão total.'
             }
@@ -150,7 +150,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             nome: 'Goblin',
             descricao: `Os goblins são pequenos, com cerca de 90 cm de altura, e têm constituição física magra e esguia. Tendem a ter cabeças longas e estreitas com queixos pontiagudos, orelhas pontiagudas sem lóbulos, narizes estreitos e lábios finos. Os goblins subterrâneos comuns têm pele amarelada pálida, enquanto aqueles que vivem na superfície adquirem uma coloração verde-escura.
                     Uma combinação de forte desejo de dominância e um instinto racional de fuga do perigo frequentemente prejudica sua capacidade de formar grupos maiores e culturas estáveis. A lealdade, quando existe, é reservada a familiares próximos. Se suas vidas fossem mais seguras, os goblins atingiriam uma idade média de 70 anos, mas na prática poucos têm essa sorte.`,
-            images: ['public/races/goblin.png'],
+            images: ['/public/races/goblin.png'],
             detalhes: {
                 Visão_no_Escuro_I: 'Goblins podem enxergar a 3 metros sem penalidades, mesmo na escuridão total.',
                 Tamanho_Reduzido_I: 'Goblins são criaturas Pequenas. Além de outros efeitos de tamanho, multiplique seus acertos de concussão por 0,75.',
@@ -163,7 +163,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             nome: 'Gratar',
             descricao: `Os Gratar são humanoides semelhantes a sapos, com altura semelhante à de um homem, e predominantemente amorais. Possuem bocas largas e babantes e grandes olhos bulbosos. Essas criaturas são anfíbias, mas passam a maior parte do tempo fora da água.
                     A cor dos Gratar varia de acordo com seu poder e status: jovens são verdes e fracos; ao amadurecer ficam amarelos e mais ousados; os mais poderosos ficam negros; os que se isolam ficam acinzentados; e os que dominaram muitas tribos ficam vermelhos (Gratar Reais). A maioria dos Gratar é capaz de atingir a idade de 100 anos, e os Gratar Reais podem chegar aos dois séculos.`,
-            images: ['public/races/gratar.png'],
+            images: ['/public/races/gratar.png'],
             detalhes: {
                 Visão_Lagartixa: 'Os olhos dos Gratar funcionam como os de uma lagartixa, permitindo maior clareza de visão de perto, além de boa percepção de profundidade, e não perdem a visão de cores em condições de escuridão. Recebem um bônus de +10 em todas as manobras de Percepção baseadas na visão.',
                 Musculatura_Recurvada: 'Os Gratar são saltadores incríveis com pernas poderosas. Seu salto em distância correndo é de 3,6 metros e seu salto em altura correndo é de 74 centímetros. Recebem um bônus de +20 em manobras de Acrobacia, Escalada, Salto e Corrida.'
@@ -173,7 +173,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             nome: 'Meio Elfo',
             descricao: `Os meio-elfos se beneficiam da combinação da graça élfica e da robustez humana. São fortes e esbeltos, mais magros que os homens, mas mais robustos que os elfos, com traços finos e angulares. Todos os meio-elfos têm uma expectativa de vida maior que a dos humanos, mas não possuem a imortalidade élfica.
                     Meio-elfos geralmente vivem em sociedades élficas ou humanas, em vez de formarem sociedades próprias. Em regiões onde o contato entre as duas raças tem sido constante por longos períodos, populações mistas podem surgir e desenvolver suas próprias identidades culturais distintas.`,
-            images: ['public/races/meio-elfo.png'],
+            images: ['/public/races/meio-elfo.png'],
             detalhes: {
                 Dorminhoco_Eficiente_I: 'Alguns meio-elfos meditam, enquanto outros dormem, mas em ambos os casos, três horas de sono ou meditação substituem quatro horas de sono.',
                 Visão_Noturna: 'Meio-elfos podem enxergar em penumbra tão bem quanto um humano enxerga à luz do dia. Todas as penalidades por escuridão são reduzidas em 40, exceto em condições de escuridão total.'
@@ -183,7 +183,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             nome: 'Halfling',
             descricao: `Os halflings são muito baixos, raramente ultrapassando 1,20 m de altura, e tendem a ser robustos. Possuem pés grandes e peludos que são quase imunes ao frio, e por isso costumam andar descalços. São um povo pacífico, que prefere a tranquilidade de suas aldeias. Amantes de boa comida e bebida, passam grande parte do tempo em tavernas e casas de amigos.
                     Os halflings possuem um alto nível de destreza manual e são hábeis em se mover silenciosamente. Quando pressionados, podem se tornar inimigos implacáveis e incansáveis devido a uma constituição incrível, capazes de resistir até mesmo aos danos mágicos e físicos mais poderosos por longos períodos.`,
-            images: ['public/races/halfling.png'],
+            images: ['/public/races/halfling.png'],
             detalhes: {
                 Tamanho_Reduzido_I: 'Halflings são criaturas Pequenas. Além de outros efeitos de tamanho, multiplique seus acertos de concussão por 0,75.',
                 Prodígio_Stalking_II: 'Halflings recebem um bônus de +10 em manobras de Perseguição (Stalking).'
@@ -193,7 +193,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             nome: 'Hobgoblin',
             descricao: `De tempos em tempos, os Goblins dão à luz filhotes incomumente grandes, que se tornarão adultos muito maiores, com a pele de um tom lamacento. Os Goblins evitam esse destino terrível matando a maioria deles ao nascer. Na idade adulta, o tamanho e a força superiores lhes conferem domínio sobre aqueles que reverenciam o domínio da força bruta.
                     O brilho do sol, embora desagradável, não causa horror aos Hobgoblins, que seguem destemidamente seus inimigos durante o dia. Esses guerreiros astutos são bastante formidáveis no campo de batalha. Em princípio, a expectativa de vida dos hobgoblins é pelo menos equivalente à dos humanos, mas a maioria morre rapidamente pelas mãos de irmãos ambiciosos.`,
-            images: ['public/races/hobgoblin.png'],
+            images: ['/public/races/hobgoblin.png'],
             detalhes: {
                 Visão_no_Escuro_II: 'Hobgoblins podem enxergar a 6 metros sem penalidades, mesmo na escuridão total.',
                 Visão_Noturna: 'Hobgoblins podem enxergar em penumbra tão bem quanto um humano enxerga à luz do dia. Todas as penalidades por escuridão são reduzidas em 40, exceto em escuridão total.',
@@ -204,7 +204,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             nome: 'Humano da Caverna',
             descricao: `Os homens das cavernas são os remanescentes isolados dos ancestrais dos homens comuns. Musculosos, com testas inclinadas e mandíbulas proeminentes, os homens das cavernas têm cabelos castanhos ou ruivos, olhos castanhos e pele bronzeada, mas são mais baixos que seus parentes comuns. Vestimentas simples feitas de peles de animais são o traje normal.
                     Seu intelecto não é poderoso, mas sua disposição cooperativa e bem-humorada torna sua companhia uma experiência agradável. Os homens das cavernas se unem para formar tribos, cada uma com seu próprio conjunto complexo de rituais sociais e crenças religiosas. Sua expectativa de vida média é de 50 anos.`,
-            images: ['public/races/humano.png'],
+            images: ['/public/races/humano.png'],
             detalhes: {
                 Sem_Talentos_Especiais: 'Os humanos da caverna não possuem talentos raciais especiais além de sua excepcional Resistência física (+25).'
             }
@@ -213,7 +213,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             nome: 'Humano Comum',
             descricao: `Os homens comuns são da mesma raça que conhecemos no mundo real e apresentam as mesmas variações de tamanho, constituição física, cor da pele/cabelo e características faciais. Altamente adaptáveis, podem ser encontrados em praticamente qualquer clima ou ambiente e desenvolvem culturas bastante diversas.
                     Os humanos são o padrão pelo qual todas as outras raças são comparadas. No entanto, os humanos se beneficiam de um alto número de Pontos de Desenvolvimento (DP) bônus.`,
-            images: ['public/races/humano.png'],
+            images: ['/public/races/humano.png'],
             detalhes: {
                 Sem_Talentos_Especiais: 'Os humanos não possuem talentos ou defeitos raciais. São o padrão de referência do sistema, beneficiando-se do maior número de Pontos de Desenvolvimento bônus (50 DPs).'
             }
@@ -222,7 +222,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             nome: 'Humano Superior',
             descricao: `Os homens superiores são mais altos e fortes do que os homens comuns, têm uma aparência mais imponente, vivem mais tempo e tendem a ser mais ousados e ambiciosos. Eles também são notoriamente rígidos e inflexíveis, não tão flexíveis ou adaptáveis quanto seus irmãos comuns, e mais facilmente influenciados por seu próprio orgulho ou pelo fascínio da magia e do poder.
                     Eles constroem grandes impérios, mas esses impérios frequentemente entram em colapso de forma espetacular devido à sua própria arrogância. Podem ter o sangue de deuses ou gigantes, o que explicaria tanto sua força quanto seu orgulho.`,
-            images: ['public/races/humano.png'],
+            images: ['/public/races/humano.png'],
             detalhes: {
                 Sem_Talentos_Especiais: 'Os humanos superiores não possuem talentos ou defeitos raciais especiais além de seus bônus de atributos superiores.'
             }
@@ -230,7 +230,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
         {
             nome: 'Humano Mestiço',
             descricao: `Homens mestiços são descendentes de pais superiores e comuns. Eles têm características intermediárias e podem ser difíceis de distinguir de qualquer um dos parentes. Sociedades onde humanos superiores e comuns têm contato frequente podem ter populações significativas de homens mestiços.`,
-            images: ['public/races/humano.png'],
+            images: ['/public/races/humano.png'],
             detalhes: {
                 Sem_Talentos_Especiais: 'Os humanos mestiços não possuem talentos ou defeitos raciais especiais além de seus bônus de atributos intermediários.'
             }
@@ -239,7 +239,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             nome: 'Hvasstonn',
             descricao: `Também conhecidos como gigantes ou homens grandes, os Hvasstonn são semelhantes em muitos aspectos a humanos extremamente grandes, diferindo na altura (os homens têm em média 2,30 m), olhos profundos tão escuros que a pupila mal pode ser distinguida, pelos corporais curtos, grossos e grisalhos, quase tão espessos quanto pelagem, e dentes afiados de carnívoros.
                     Clãs de Hvasstonn vivem próximos uns dos outros e, em tempos de necessidade, se ajudam mutuamente. Eles geralmente preferem empunhar uma arma em cada mão; devido ao seu tamanho, cada arma tem o tamanho de uma arma humana de duas mãos. Vivem até os 200 anos.`,
-            images: ['public/races/hvasstonn.png'],
+            images: ['/public/races/hvasstonn.png'],
             detalhes: {
                 Tamanho_Aumentado_I: 'Os Hvasstonn são criaturas Grandes. Além de outros efeitos de tamanho, multiplique seus acertos de concussão por 1,5.',
                 Armamento_Natural: 'Os Hvasstonn podem atacar usando seus dentes afiados, utilizando a especialização Mordida da perícia Treinamento de Combate: Desarmado.',
@@ -250,7 +250,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             nome: 'Idiyva',
             descricao: `Uma pelagem curta, cor de café com pontas douradas, cobre o corpo esguio e musculoso do Idiyva, exceto no rosto, nas palmas das mãos e nas solas dos pés. A pelagem na cabeça se alonga e clareia, formando uma juba dourada ao redor do rosto. Olhos felinos verdes conferem ao Idiyva uma excelente visão noturna; dentes caninos revelam sua natureza carnívora.
                     A sociedade Idiyva é competitiva e valoriza muito a honra pessoal. Não é incomum que desentendimentos sejam resolvidos por combates rituais. Embora os Idiyva possam ser amigáveis, eles não hesitam em revelar os instintos de luta de um predador que se escondem por trás de seus modos normalmente civilizados.`,
-            images: ['public/races/idiyva.png'],
+            images: ['/public/races/idiyva.png'],
             detalhes: {
                 Audição_Felina: 'A audição dos Idiyva é equivalente à de um gato, permitindo-lhes ouvir alguns sons agudos e determinar com mais precisão a localização da fonte sonora (ganhando +10 em manobras de Percepção para localizar um som).',
                 Armas_Naturais: 'Os Idiyva podem atacar usando suas garras, utilizando a especialização Garras da perícia Treinamento de Combate: Desarmado.',
@@ -262,7 +262,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             nome: 'Kobold',
             descricao: `Os menores entre as raças goblinoides, com pele avermelhada e um par de chifres crescendo em suas cabeças, os kobolds se curvam à ferocidade e ao bullying praticados por seus parentes maiores. As artes de mentir, trapacear, roubar e bajular permitem que o covarde kobold sobreviva na sanguinária sociedade goblin.
                     Os kobolds raramente lutam em uma batalha direta. Eles esperam por uma oportunidade de emboscada, ou possivelmente esperam que a ajuda chegue se não puderem fugir. Um juramento de rendição, é claro, será rapidamente quebrado se a situação se inverter. Em princípio, eles são capazes de atingir uma expectativa de vida de 75 anos, mas poucos o fazem.`,
-            images: ['public/races/kobold.png'],
+            images: ['/public/races/kobold.png'],
             detalhes: {
                 Tamanho_Reduzido_I: 'Kobolds são criaturas Pequenas. Além de outros efeitos de tamanho, multiplique seus acertos de concussão por 0,75.',
                 Visão_no_Escuro_I: 'Kobolds podem enxergar a 3 metros sem penalidades, mesmo na escuridão total.',
@@ -275,7 +275,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             nome: 'Nycamerith',
             descricao: `Embora muitos se perguntem se são semelhantes a Gnomos ou até mesmo Halflings, esses seres baixos, gordos e de pele azul provavelmente constituem uma raça inteira por si só. Suas orelhas são grandes e pontudas, e seus olhos dançam ao ritmo da música que tocam continuamente. Vivendo suas longas vidas (até 600 anos) seguindo a Grande Canção, são um povo alegre e agradável, raramente se envolvendo em atos violentos.
                     Os Nycamerith estão entre os maiores músicos e artesãos de instrumentos musicais do mundo. A maioria se contenta em entreter em tavernas e trabalhar em seus ofícios. Habitam vilarejos isolados, localizados em vales profundos ou em altas montanhas, mas viajam para se apresentar para um público que os aprecie.`,
-            images: ['public/races/nycamerith.png'],
+            images: ['/public/races/nycamerith.png'],
             detalhes: {
                 Garganta_de_Ouro: 'Os Nycamerith possuem belas vozes que acalmam e tranquilizam. Recebem +10 em qualquer manobra para acalmar ou persuadir verbalmente (Charme, Canto, Liderança, etc.).',
                 Audição_Gato: 'A audição dos Nycamerith é equivalente à de um gato, permitindo-lhes ouvir alguns sons agudos e determinar com mais precisão a localização da fonte sonora (+10 em manobras de Percepção para localizar um som).',
@@ -287,7 +287,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             nome: 'Orc Maior',
             descricao: `Os orcs têm altura semelhante à dos humanos, embora possuam sobrancelhas e mandíbulas grossas em rostos arredondados, orelhas pontudas sem lóbulos, lábios finos que mal cobrem dentes grandes, narizes pequenos quase afilados e olhos pequenos e profundos. São de constituição robusta, pois são criados como guerreiros e trabalhadores.
                     Os Orcs Maiores são resistentes e astutos, capazes de operar à luz do dia sem penalidades, e geralmente são os líderes das tribos orcs. Os orcs enxergam bem à noite e têm visão limitada mesmo na escuridão total.`,
-            images: ['public/races/orc.png'],
+            images: ['/public/races/orc.png'],
             detalhes: {
                 Visão_no_Escuro_I: 'Todos os Orcs podem enxergar a 3 metros sem penalidades, mesmo na escuridão total.',
                 Visão_Noturna: 'Todos os Orcs podem enxergar em penumbra tão bem quanto um humano enxerga à luz do dia. Todas as penalidades por escuridão são reduzidas em 40, exceto em escuridão total.',
@@ -297,7 +297,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
         {
             nome: 'Orc Cinzento',
             descricao: `Os Orcs Cinzentos são altamente inteligentes, embora usem essa genialidade para o mal e para as trevas. Muitos são conjuradores, especialmente feiticeiros, clérigos e magos. Eles costumam trabalhar em pequenos grupos com outros tipos de orcs. Embora sejam mais inteligentes que os Orcs Maiores, a sociedade orc é governada pelos fisicamente fortes, e os Orcs Cinzentos são mais propensos a aconselhar do que a governar.`,
-            images: ['public/races/orc.png'],
+            images: ['/public/races/orc.png'],
             detalhes: {
                 Visão_no_Escuro_I: 'Todos os Orcs podem enxergar a 3 metros sem penalidades, mesmo na escuridão total.',
                 Visão_Noturna: 'Todos os Orcs podem enxergar em penumbra tão bem quanto um humano enxerga à luz do dia. Todas as penalidades por escuridão são reduzidas em 40, exceto em escuridão total.',
@@ -307,7 +307,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
         {
             nome: 'Orc Menor',
             descricao: `Os Orcs Menores nascem para viver, lutar e morrer na escuridão; eles odeiam as estrelas e a lua, mas entram em pânico sob o sol mais brilhante. Eles compõem a maior parte da população orc. São os mais sensíveis à luz entre as raças orcs.`,
-            images: ['public/races/orc.png'],
+            images: ['/public/races/orc.png'],
             detalhes: {
                 Visão_no_Escuro_II: 'Orcs Menores podem enxergar a 4,5 metros sem penalidades, mesmo na escuridão total.',
                 Visão_Noturna: 'Todos os Orcs podem enxergar em penumbra tão bem quanto um humano enxerga à luz do dia. Todas as penalidades por escuridão são reduzidas em 40, exceto em escuridão total.',
@@ -317,7 +317,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
         {
             nome: 'Orc Scrug',
             descricao: `Os Scrugs são tão tolos quanto os Orcs Menores, mas se distinguem por seu grande tamanho. Frequentemente são confundidos com ogros ou trolls à distância. Embora a maioria não tenha inclinação para serem chefes, os Scrugs podem ser encontrados como guarda-costas de chefes orcs, embora não tenham consideração por nenhum outro ser vivo, nem mesmo por outros orcs.`,
-            images: ['public/races/orc.png'],
+            images: ['/public/races/orc.png'],
             detalhes: {
                 Visão_no_Escuro_II: 'Orcs Scrug podem enxergar a 4,5 metros sem penalidades, mesmo na escuridão total.',
                 Visão_Noturna: 'Todos os Orcs podem enxergar em penumbra tão bem quanto um humano enxerga à luz do dia. Todas as penalidades por escuridão são reduzidas em 40, exceto em escuridão total.',
@@ -328,7 +328,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
         {
             nome: 'Orc Vard',
             descricao: `Os Vards são uma mutação de quatro braços dos Orcs Maiores, mas se mantêm entre os seus. Raramente são encontrados com outras raças de orcs. Os Vards são mais sensíveis à luz solar do que os Orcs Maiores, mas menos do que as outras raças. Os Vards podem usar com eficácia um escudo e três armas, quatro armas diferentes ou um par de armas de duas mãos.`,
-            images: ['public/races/orc.png'],
+            images: ['/public/races/orc.png'],
             detalhes: {
                 Visão_no_Escuro_I: 'Todos os Orcs podem enxergar a 3 metros sem penalidades, mesmo na escuridão total.',
                 Visão_Noturna: 'Todos os Orcs podem enxergar em penumbra tão bem quanto um humano enxerga à luz do dia. Todas as penalidades por escuridão são reduzidas em 40, exceto em escuridão total.',
@@ -341,7 +341,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             nome: 'Plynos',
             descricao: `A cabeça de um cervo majestoso ou de uma corça esguia adorna o corpo de um Humano, tornando este ser facilmente identificável como um Plynos. Os homens-cervo são herbívoros, mas os cervos, em particular, apreciam o combate e a batalha, desde que sejam nobres e honrados — eles não toleram crueldade ou violência sem sentido.
                     Habitam cabanas de madeira de sua própria construção e geralmente vivem em clãs familiares. Os Elfos da Floresta são seus vizinhos preferidos. Sua expectativa de vida média é de 80 anos, e seus filhos atingem a maturidade vários anos mais cedo do que os Humanos.`,
-            images: ['public/races/plynos.png'],
+            images: ['/public/races/plynos.png'],
             detalhes: {
                 Olfato_Aguçado_II: 'Os Plynos recebem um bônus de +10 em testes de Percepção envolvendo olfato.',
                 Audição_Felina: 'A audição dos Plynos é equivalente à de um gato, permitindo-lhes ouvir alguns sons agudos e determinar com mais precisão a localização da fonte sonora (+10 em manobras de Percepção para localizar um som).',
@@ -353,7 +353,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             nome: 'Sea-kral',
             descricao: `Os Sea-krals são criaturas semelhantes a macacos, com pele cinza-escura ou azul e uma densa pelagem branca que cresce na cabeça, pescoço e ombros. Ambos os sexos têm braços longos e um osso extra que conecta o pulso à mão. Dedos longos e ágeis, com unhas em forma de garra, os auxiliam a se tornarem artesãos e arqueiros habilidosos.
                     Os Sea-krals temem as ondas famintas, mas encontram tanto prazer em seu estilo de vida violento que não conseguem abandonar o oceano. Eles constroem navios longos para navegar pelos mares, saqueando e pilhando outras embarcações como piratas. Dormem durante o dia e são ativos durante a noite.`,
-            images: ['public/races/sea-kral.png'],
+            images: ['/public/races/sea-kral.png'],
             detalhes: {
                 Visão_Noturna: 'Os Sea-krals podem enxergar na penumbra tão bem quanto um humano enxerga à luz do dia. Todas as penalidades por escuridão são reduzidas em 40, exceto em escuridão total.',
                 Articulações_Extras: 'Os braços dos Sea-kral possuem múltiplas articulações e são ágeis. Todas as manobras físicas que dependem principalmente de seus braços, incluindo combate corpo a corpo, arremesso e escalada, recebem um bônus de +10.',
@@ -364,7 +364,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             nome: 'Sibbicai',
             descricao: `Provavelmente parentes distantes dos Vulfen, os Sibbicai possuem cabeça de chacal e pelagem curta, lisa e oleosa, de cor preta, que cobre seus corpos humanoides musculosos. Um povo inteligente e culto, os Sibbicai se adaptam bem a outras raças humanoides, desde que estas não tenham preconceitos.
                     Os Sibbicai são geralmente quietos e reservados, mas se irritam facilmente. Em batalha, usam armaduras e uma variedade de armas. Grupos de Sibbicai frequentemente se oferecem como mercenários, mas seus serviços são muito caros. Uma vez contratados, sua reputação de lealdade e cumprimento de promessas é bem justificada.`,
-            images: ['public/races/sibbicai.png'],
+            images: ['/public/races/sibbicai.png'],
             detalhes: {
                 Olfato_Aguçado_III: 'Os Sibbicai recebem um bônus de +15 em testes de Percepção envolvendo olfato.',
                 Audição_Canina: 'Os Sibbicai têm uma audição tão sensível quanto a de um cão, permitindo-lhes localizar sons próximos com alta precisão e ouvir sons até 4 vezes mais distantes que um humano. Isso concede +10 em manobras de Percepção baseadas em som.',
@@ -376,7 +376,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             nome: 'Sohleugir',
             descricao: `Escamas texturizadas de jade brilham na pele do anfíbio Sohleugir, interrompidas por cristas semelhantes a barbatanas que se elevam ao longo da espinha dorsal. Esses espinhos irregulares estendem-se da ponta da cauda de quase um metro até o topo da cabeça dracônica com focinho.
                     Os Sohleugir constroem cidades intrincadas de pedra, corais e conchas em costas rochosas próximas ao oceano. Eles cultivam as ondas como um agricultor lavra a terra. Os Sohleugir são um povo guerreiro, ávido por testar as pontas de seus tridentes e a coragem de seus espíritos, mas a crueldade permanece ausente de sua paixão pelo combate.`,
-            images: ['public/races/sohleugir.png'],
+            images: ['/public/races/sohleugir.png'],
             detalhes: {
                 Armadura_Natural_III: 'As escamas dos Sohleugir fornecem a proteção de um tipo de armadura (AT) 4 contra ataques, sem penalidades de carga ou manobra.',
                 Armas_Naturais: 'Os Sohleugir podem atacar com suas garras, usando a especialização em garras da perícia Treinamento de Combate: Desarmado.',
@@ -389,7 +389,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             nome: "Sstoi'isslythi",
             descricao: `Homens esguios que se movem com a graça sinuosa de serpentes, os Sstoi'isslythi possuem peles macias de réptil compostas por pequenas escamas douradas. Bolsas de veneno, localizadas no pescoço, fornecem veneno às presas carnudas retraídas em suas bocas. Os Sstoi'isslythi vivem em grupos familiares, cada membro imune ao veneno de seus parentes.
                     Dependentes do ambiente para se aquecerem, os Sstoi'isslythi habitam climas ensolarados que nunca experimentam o frio do inverno. Amplos terraços para relaxar no calor e claraboias para aquecer os espaços internos dominam suas elegantes cidades.`,
-            images: ['public/races/sstoi-isslythi.png'],
+            images: ['/public/races/sstoi-isslythi.png'],
             detalhes: {
                 Sensibilidade_Térmica: 'Os Sstoi\'isslythi possuem órgãos sensoriais muito sensíveis em seus rostos, que lhes permitem avaliar a temperatura a curta distância com precisão de até 1/1000 de grau. Isso lhes concede um bônus de até +20 em testes de Percepção e Rastreamento para detectar criaturas vivas.',
                 Armas_Naturais: "Os Sstoi'isslythi podem atacar com suas presas, usando a especialização Mordida da perícia Treinamento de Combate: Desarmado. Os ataques são resolvidos na tabela Ferrão.",
@@ -401,7 +401,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             nome: 'Troll',
             descricao: `Os trolls são grandes e imensamente fortes (geralmente com cerca de 2,7 metros de altura e constituição maciça), mas mentalmente lentos em comparação com a maioria das outras raças. Os trolls são cobertos por uma pele grossa e dura que se sobrepõe nas articulações, semelhante à pele de um rinoceronte.
                     Os trolls não suportam a luz do dia, sofrendo uma penalidade de -50 em todas as ações sob a luz solar intensa. Suas vantagens inatas em situações físicas ou de combate, juntamente com mentes um tanto fracas e aparências aterrorizantes, tendem a fazer com que muitos trolls vivam suas vidas além dos limites da civilização.`,
-            images: ['public/races/troll.png'],
+            images: ['/public/races/troll.png'],
             detalhes: {
                 Visão_no_Escuro_I: 'Os trolls enxergam a 3 metros sem penalidades, mesmo na escuridão completa.',
                 Inepto_Influência_V: 'Por natureza e reputação, os trolls são violentos e perigosos. Eles sofrem uma penalidade de -25 em qualquer tentativa de usar perícias de Influência, exceto para provocar uma reação de medo ou moral.',
@@ -417,7 +417,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             nome: 'Vulfen',
             descricao: `Homens peludos com cabeças e caudas lupinas, os Vulfen são frequentemente confundidos com lobisomens. A astúcia molda o comportamento dos Vulfen, mas a crueldade e a sede de sangue os privam do respeito e da admiração dos humanos. Os Vulfen vivem em matilhas, matando e devorando tudo em seu caminho. São noturnos, dormindo durante o dia e devastando à noite.
                     Suas vidas são brutais, mas geralmente curtas, raramente ultrapassando os 40 anos. Os Vulfen expulsos de suas matilhas, geralmente por um desafio fracassado contra seus superiores, ocasionalmente encontram um lar em unidades mercenárias.`,
-            images: ['public/races/vulfen.png'],
+            images: ['/public/races/vulfen.png'],
             detalhes: {
                 Olfato_Aguçado_II: 'Os Vulfen recebem um bônus de +10 em testes de Percepção que envolvam olfato.',
                 Audição_Canina: 'Os Vulfen possuem uma audição tão sensível quanto a de um cão, permitindo-lhes localizar sons próximos com alta precisão e ouvir sons até 4 vezes mais distantes que um humano. Isso concede +10 em manobras de Percepção baseadas em som.',
@@ -432,7 +432,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             nome: 'Overview',
             descricao: `As pessoas com quem o personagem cresceu determinam sua origem cultural. Se o personagem cresceu como filho de um camponês em uma cultura feudal rural, ele será diferente de um personagem que cresceu como filho de um pescador em uma cultura despótica urbana, mesmo que ambos sejam da mesma raça e profissão. Fatores como idioma, preferências de perícias, preferências de armas, religião, visão de mundo, preconceitos e muitas outras características serão afetados pela cultura na qual o personagem foi criado.
                         A cultura do personagem concede níveis que são atribuídos a habilidades anteriores ao Nível 1, representando o aprendizado da infância. Os níveis concedidos são mostrados na Tabela a seguir.`,
-            images: ['public/tabela-culturas.png',],
+            images: ['/public/tabela-culturas.png',],
             detalhes: {
                 Descrição: 'A cultura do personagem concede níveis que são atribuídos a habilidades anteriores ao Nível 1, representando o aprendizado da infância.',
                 Extras: '* Perícias que necessitam de especialização, exceto idiomas/linguagem, tem o limite de máximo de 2 níveis/ranks por especialização.'
@@ -537,7 +537,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
         {
             nome: 'Sem Profissão',
             descricao: 'A opção "Sem Profissão" não se concentra em nenhum conjunto específico de perícias. Embora ofereça um acesso muito amplo, ela não é muito eficiente e ficará para trás se misturada com as outras profissões. Se a opção "Sem Profissão" for usada, o personagem seleciona um conjunto de 6 listas de magias básicas e escolha 10 perícias profissionais de quaisquer categorias (sujeito à aprovação do Mestre).',
-            images: ['public/custos-sem-profissao.png'],
+            images: ['/public/custos-sem-profissao.png'],
             detalhes: {
                 Reino: 'Qualquer um.',
                 Perícias_Profissionais: 'Quaisquer 10 perícias aprovadas pelo Mestre.',
@@ -547,7 +547,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
         {
             nome: 'Amador',
             descricao: 'Os Amadores são Semi-Conjuradores que aprimoram suas capacidades de subterfúgio usando Essência. As magias básicas de um Amador tendem a aprimorar habilidades naturais em diversas áreas, com as listas mais distintas conferindo-lhe vantagem no comércio e com máquinas. Em um cenário mais avançado, o papel mais natural do Amador pode ser o de mecânico ou engenheiro.',
-            images: ['public/custos-amador.png'],
+            images: ['/public/custos-amador.png'],
             detalhes: {
                 Reino: 'Essência',
                 Perícias_Profissionais: 'Perception, Metalcraft, Attunement, Spell Lore, Climbing, Running, Architecture, Engineering, Influence, Trading, Concealment, Stalking, Locks, Mechanics, Traps.',
@@ -557,7 +557,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
         {
             nome: 'Bardo',
             descricao: 'Bardos são semi-conjuradores de essência. São músicos, artistas, fofoqueiros e mestres do conhecimento. Suas magias básicas aprimoram esses papéis, mas também incorporam música às magias para confundir inimigos e auxiliar aliados, além de proporcionar uma afinidade incomparável com itens mágicos.',
-            images: ['public/custos-bardo.png'],
+            images: ['/public/custos-bardo.png'],
             detalhes: {
                 Reino: 'Essência',
                 Perícias_Profissionais: 'Musical Composition, Attunement, Historic Lore, Language, Racial Lore, Region Lore, Religion/Philosophy, Spell Lore, Spell Trickery, Running, Acting, Music, Influence, Social Awareness, Trading.',
@@ -567,7 +567,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
         {
             nome: 'Clérigo',
             descricao: 'Clérigos são conjuradores puros que se concentraram em magias que exigem o poder mais direto de suas divindades. Suas magias básicas lidam diretamente com a vida, comunhão com divindades, invocação de criaturas vivas, proteção contra servos de divindades opostas e canalização direta de suas próprias divindades. Esses usuários de magia são os mais poderosos entre os usuários de Canalização, mas também devem ser os mais restritos no sentido de acatar os desejos ou o credo de sua divindade ou igreja.',
-            images: ['public/custos-clerigo.png'],
+            images: ['/public/custos-clerigo.png'],
             detalhes: {
                 Reino: 'Canalização',
                 Perícias_Profissionais: 'Attunement, Religion/Philosophy, Spell Lore, Grace, Medicine, Meditation, Channeling, Power Development, Astronomy, Influence, Leadership, Magical Ritual, Open Spell Lists, Closed Spell Lists, Base Spell Lists.',
@@ -577,7 +577,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
         {
             nome: 'Curandeiro',
             descricao: 'Os curandeiros combinam os domínios da Canalização e do Mentalismo (Atributos dos Domínios da Intuição e da Presença). Eles se concentram em feitiços de autocura e na capacidade de absorver os ferimentos de outros. Assim, um curandeiro pode curar uma pessoa absorvendo o ferimento do paciente e curando-o gradualmente. Eles podem aprender facilmente tanto Desenvolvimento Corporal (para sobreviver a esse processo) quanto habilidades médicas (para ajudar os outros sem precisar absorver seus ferimentos).',
-            images: ['public/custos-curandeiro.png'],
+            images: ['/public/custos-curandeiro.png'],
             detalhes: {
                 Reino: 'Canalização e Mentalismo',
                 Perícias_Profissionais: 'Body Development, Attunement, Racial Lore, Grace, Herbalism, Medicine, Meditation, Mental Focus, Channeling, Power Development, Social Awareness, Magical Ritual, Open Spell Lists, Closed Spell Lists, Base Spell Lists.',
@@ -587,7 +587,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
         {
             nome: 'Curandeiro Leigo',
             descricao: 'Curandeiros Leigos são Conjuradores Puros de Mentalismo que se concentraram em feitiços para curar pessoas e animais. Seus feitiços básicos lidam com a cura de doenças e ferimentos, bem como com a criação e animação de próteses. Eles também podem aprender habilidades médicas mundanas com facilidade.',
-            images: ['public/custos-leigo.png'],
+            images: ['/public/custos-leigo.png'],
             detalhes: {
                 Reino: 'Mentalismo',
                 Perícias_Profissionais: 'Fabric Craft, Woodcraft, Attunement, Racial Lore, Grace, Herbalism, Medicine, Mental Focus, Power Development, Influence, Social Awareness, Magical Ritual,Open Spell Lists, Closed Spell Lists, Base Spell Lists.',
@@ -597,7 +597,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
         {
             nome: 'Druída',
             descricao: 'Druidas são conjuradores puros que se concentraram em magias relacionadas ao mundo natural. Suas magias básicas lidam com ervas, outras plantas, animais, clima e a natureza em geral. Dependendo do cenário, podem ser ambientalistas modernos, protetores quase históricos de seu povo contra os poderes avassaladores da natureza ou simplesmente cultistas rurais com rituais estranhos.',
-            images: ['public/custos-druida.png'],
+            images: ['/public/custos-druida.png'],
             detalhes: {
                 Reino: 'Canalização',
                 Perícias_Profissionais: 'Animal Handling, Perception, Tracking, Woodcraft, Navigation, Survival, Creature Lore, Region Lore, Grace, Herbalism, Power Development, Open Spell Lists, Closed Spell Lists, Base Spell Lists, Concealment.',
@@ -607,7 +607,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
         {
             nome: 'Estudioso',
             descricao: 'Os eruditos se especializam em vocações intelectuais. Assim como os conjuradores puros, os eruditos não possuem aptidão real para habilidades de combate. Em vez disso, concentram-se nas habilidades acadêmicas utilizadas em suas vocações. São mais aptos a aprender magias do que outros usuários de armas, embora não se comparem às verdadeiras Profissões de conjuração.',
-            images: ['public/custos-estudioso.png'],
+            images: ['/public/custos-estudioso.png'],
             detalhes: {
                 Reino: 'Reino das Armas (Reino de magia da sua escolha)',
                 Perícias_Profissionais: 'Writing, Creature Lore, Historic Lore, Language, Materials Lore, Racial Lore, Region Lore, Religion/Philosophy, Architecture, Astronomy, Engineering, Mathematics, Administration, Service, Trade.',
@@ -617,7 +617,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
         {
             nome: 'Feiticeiro',
             descricao: 'Os feiticeiros combinam o poder bruto do Reino da Essência com o fervor do Domínio da Canalização (Atributos dos Reinos da Intuição e da Empatia). Suas magias básicas lidam com a destruição tanto de seres vivos (corpos, almas e mentes) quanto de matéria inanimada.',
-            images: ['public/custos-feiticeiro.png'],
+            images: ['/public/custos-feiticeiro.png'],
             detalhes: {
                 Reino: 'Essência e Canalização',
                 Perícias_Profissionais: 'Attunement, Runes, Creature Lore, Materials Lore, Spell Lore, Grace, Channeling, Directed Spell, Power Development, Architecture, Engineering, Magical Ritual, Open Spell Lists, Closed Spell Lists, Base Spell Lists.',
@@ -627,7 +627,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
         {
             nome: 'Guerreiro',
             descricao: 'Os guerreiros são os principais especialistas em combate. Um guerreiro pode ser um cavaleiro montado com armadura pesada, um mosqueteiro destemido, um brutamontes com um enorme porrete revestido de bronze, um samurai obcecado por honra ou um mestre arqueiro. A face da batalha pode mudar com a tecnologia e a organização social, mas sempre haverá aqueles que se especializam em estar no centro de tudo.',
-            images: ['public/custos-guerreiro.png'],
+            images: ['/public/custos-guerreiro.png'],
             detalhes: {
                 Reino: 'Reino das Armas (Reino de magia da sua escolha)',
                 Perícias_Profissionais: 'Riding, Body Development, Fortitude, Weight-Training, Maneuvering in Armor, Mounted Combat, Protect, Disarm, Multiple Attacks, Melee Weapons, Ranged Weapons, Shield, Metalcraft, Running, Leadership.',
@@ -637,7 +637,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
         {
             nome: 'Ilusionista',
             descricao: 'Ilusionistas são Conjuradores Puros de Essência que se concentraram em feitiços de desorientação e ilusão. Seus feitiços básicos lidam principalmente com a manipulação de elementos e forças que afetam os sentidos humanos: visão, audição, tato, paladar, olfato, impulsos mentais e a combinação desses sentidos. Mais sutil que o Mago, o Ilusionista é menos direto, mas não menos poderoso.',
-            images: ['public/custos-ilusionista.png'],
+            images: ['/public/custos-ilusionista.png'],
             detalhes: {
                 Reino: 'Essência',
                 Perícias_Profissionais: 'Perception, Illusion Crafting, Drawing/Painting, Attunement, Spell Lore, Grace, Spell Trickery, Acting, Music, Stage Magic, Power Development, Open Spell Lists, Closed Spell Lists, Base Spell Lists, Trickery.',
@@ -647,7 +647,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
         {
             nome: 'Ladino',
             descricao: 'Ladinos são os usuários de armas versáteis e aventureiros. Eles podem aprender a usar diversas armas quase tão facilmente quanto um Guerreiro e habilidades de subterfúgio/mecânica quase tão bem quanto um Ladrão. Ladinos também podem adquirir habilidades atléticas (incluindo Desenvolvimento Corporal), habilidades de combate adicionais e habilidades de sobrevivência na natureza com facilidade. Ladinos são uma boa escolha se você quer ser um bom combatente e também se aventurar em diversas áreas fora do combate',
-            images: ['public/custos-ladino.png'],
+            images: ['/public/custos-ladino.png'],
             detalhes: {
                 Reino: 'Reino das Armas (Reino de magia da sua escolha)',
                 Perícias_Profissionais: 'Riding, Perception, Body Development, Maneuvering in Armor, Restricted Quarters, Blind Fighting, Melee Weapons, Ranged Weapons, Survival, Jumping, Poison Mastery, Climbing, Running, Ambush, Stalking.',
@@ -657,7 +657,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
         {
             nome: 'Ladrão',
             descricao: 'Ladrões são especialistas em furtividade e sutileza. Aprendem com facilidade habilidadesmecânicas, como abrir fechaduras e desarmar armadilhas, e são bastante habilidosos no manuseio de armas. Também são mestres em subterfúgios e em diversas habilidades atléticas (como escalada). Raramente usam armaduras pesadas, mas armaduras leves não comprometem significativamente suas capacidades profissionais. Um ladrão pode seguir uma vida de furtos, mas também se adapta bem a funções de batedor e espião.',
-            images: ['public/custos-ladrao.png'],
+            images: ['/public/custos-ladrao.png'],
             detalhes: {
                 Reino: 'Reino das Armas (Reino de magia da sua escolha)',
                 Perícias_Profissionais: 'Perception, Melee Weapons, Ranged Weapons, Acrobatics, Contortions, Climbing, Running, Influence, Social Awareness, Trading, Concealment, Stalking, Trickery, Locks, Traps.',
@@ -667,7 +667,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
         {
             nome: 'Magent',
             descricao: 'O Magent é um Semi-Conjurador com habilidades e feitiços de espionagem incomparáveis: um mago-agente. Os Magents se destacam como assassinos mágicos ou agentes secretos com feitiços básicos que lidam com veneno, coleta de informações, assassinato e fuga, tanto física quanto em termos de desviar a culpa.',
-            images: ['public/custos-magent.png'],
+            images: ['/public/custos-magent.png'],
             detalhes: {
                 Reino: 'Mentalismo',
                 Perícias_Profissionais: 'Perception, Melee Weapons, Ranged Weapons, Acrobatics, Contortions, Jumping, Poison Mastery, Mental Focus, Climbing, Running, Swimming, Ambush, Concealment, Stalking, Trickery.',
@@ -677,7 +677,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
         {
             nome: 'Mago',
             descricao: 'Magos são conjuradores puros que se concentraram em magias elementais. Suas magias básicas lidam com os seis elementos de Rolemaster: terra, fogo, gelo, luz (que inclui eletricidade), água e vento. Eles possuem muitas magias que lançam raios e esferas desses elementos com efeitos potencialmente mortais, e por isso os Magos são frequentemente encontrados em campos de batalha. Eles também podem aprender todos os tipos de habilidades mágicas com facilidade.',
-            images: ['public/custos-mago.png'],
+            images: ['/public/custos-mago.png'],
             detalhes: {
                 Reino: 'Essência',
                 Perícias_Profissionais: 'Attunement, Runes, Spell Lore, Grace, Directed Spell, Power Development, Power Projection, Architecture, Astronomy, Engineering, Mathematics, Magical Ritual, Open Spell Lists, Closed Spell Lists, Base Spell Lists.',
@@ -687,7 +687,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
         {
             nome: 'Mentalista',
             descricao: 'Mentalistas são conjuradores puros de Mentalismo que se concentram em feitiços que lidam com a mente e os sentidos. Seus feitiços básicos envolvem a leitura de presenças mentais, comunicação mental, controle mental e controle sensorial. Como estudiosos do ser humano, os Mentalistas podem aprender disciplina e habilidades sociais com facilidade. São conspiradores ideais.',
-            images: ['public/custos-mentalista.png'],
+            images: ['/public/custos-mentalista.png'],
             detalhes: {
                 Reino: 'Mentalismo',
                 Perícias_Profissionais: 'Attunement, Language, Racial Lore, Grace, Meditation, Mental Focus, Power Development, Influence, Leadership, Social Awareness, Magical Ritual, Open Spell Lists, Closed Spell Lists, Base Spell Lists, Administration.',
@@ -697,7 +697,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
         {
             nome: 'Místico',
             descricao: 'Os místicos combinam os domínios da Essência e do Mentalismo (Atributos dos Reinos da Empatia e da Presença) para potencializar feitiços sutis de desorientação e modificação. Seus feitiços básicos lidam com ilusões pessoais, bem como com a modificação da matéria.',
-            images: ['public/custos-mistico.png'],
+            images: ['/public/custos-mistico.png'],
             detalhes: {
                 Reino: 'Essência e Mentalismo',
                 Perícias_Profissionais: 'Perception, Attunement, Spell Lore, Grace, Spell Trickery, Meditation, Mental Focus, Acting, Directed Spell, Power Development, Open Spell Lists, Closed Spell Lists, Base Spell Lists, Stalking, Trickery.',
@@ -707,7 +707,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
         {
             nome: 'Monge',
             descricao: 'Monges são semi-conjuradores que combinam habilidade com armas e magia mental. Suas magias básicas são estritamente pessoais, permitindo-lhes realizar grandes feitos físicos e aprimorar seus ataques. O que o cinema de Hong Kong consegue com fios e adereços, o Monge faz com magia.',
-            images: ['public/custos-monge.png'],
+            images: ['/public/custos-monge.png'],
             detalhes: {
                 Reino: 'Mentalismo',
                 Perícias_Profissionais: 'Perception, Adrenal Defense, Adrenal Focus, Adrenal Speed, Adrenal Strength, Body Development, Multiple Attacks, Unarmed, Acrobatics, Jumping, Meditation, Mental Focus, Climbing, Running, Swimming.',
@@ -717,7 +717,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
         {
             nome: 'Monge Guerreiro',
             descricao: 'Monges guerreiros se especializam em combate, disciplina e habilidades atléticas. O monge guerreiro é muito semelhante ao guerreiro, mas com um foco muito maior em habilidades disciplinares e ênfase na manobrabilidade em vez de depender de armadura. Tal personagem pode se assemelhar a um ninja ou a um artista marcial Shao-Lin.',
-            images: ['public/custos-monge-guerreiro.png'],
+            images: ['/public/custos-monge-guerreiro.png'],
             detalhes: {
                 Reino: 'Reino das Armas (Reino de magia da sua escolha)',
                 Perícias_Profissionais: 'Adrenal Defense, Adrenal Speed, Adrenal Strength, Body Development, Blind Fighting, Multiple Attacks, Reverse Strike, Subduing, Unarmed, Acrobatics, Jumping, Meditation, Climbing, Running, Swimming.',
@@ -727,7 +727,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
         {
             nome: 'Paladino',
             descricao: 'Defensores fervorosos da fé, os Paladinos são semi-conjuradores que combinam proezas em combate com magias utilitárias. O Paladino é um guerreiro sagrado altamente focado, capaz de desenvolver boas habilidades de luta e magias que sustentam seu papel como guerreiro e líder em combate. O Paladino é um combatente competente em qualquer situação, mas se destaca especialmente contra os inimigos sobrenaturais de sua fé.',
-            images: ['public/custos-paladino.png'],
+            images: ['/public/custos-paladino.png'],
             detalhes: {
                 Reino: 'Canalização',
                 Perícias_Profissionais: 'Riding, Body Development, Maneuvering in Armor, Mounted Combat, Protect, Melee Weapons, Shield, Metalcraft, Religion/Philosophy, Transcendence, Mental Focus, Running, Channeling, Influence, Leadership.',
@@ -737,7 +737,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
         {
             nome: 'Patrulheiro',
             descricao: 'O Patrulheiro é um semi-conjurador que combina Armas com Canalização, especializando-se em habilidades ao ar livre e magias que influenciam a natureza. Patrulheiros são talentosos em percepção e habilidades ao ar livre e, embora não aprendam a usar armas tão rapidamente quanto o Paladino, possuem custos de combate decentes. As listas básicas de magias de um Patrulheiro têm muitos usos, mas muitas das magias aprimoram suas habilidades em rastreamento, furtividade na natureza, sobrevivência na natureza e movimento. O Patrulheiro pode ser um comando letal.',
-            images: ['public/custos-patrulheiro.png'],
+            images: ['/public/custos-patrulheiro.png'],
             detalhes: {
                 Reino: 'Canalização',
                 Perícias_Profissionais: 'Animal Handling, Riding, Perception, Tracking, Melee Weapons, Ranged Weapons, Navigation, Survival, Creature Lore, Region Lore, Climbing, Running, Swimming, Concealment, Stalking.',
@@ -747,7 +747,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
         {
             nome: 'Trabalhador Braçal',
             descricao: 'Os trabalhadores braçais se especializam em ofícios e artesanatos físicos. Eles podem aprender habilidades com armas e armaduras com mais facilidade do que a maioria dos conjuradores, mas o combate não é seu forte. Embora possam aprender habilidades atléticas com facilidade, tendem a evitar situações de combate. Eles costumam se concentrar nas habilidades necessárias para uma vocação específica.',
-            images: ['public/custos-trabalhador.png'],
+            images: ['/public/custos-trabalhador.png'],
             detalhes: {
                 Reino: 'Reino das Armas (Reino de magia da sua escolha)',
                 Perícias_Profissionais: 'Animal Handling, Body Development, Weight-training, Culinary, Drawing/Painting, Fabric Craft, Leathercraft, Metalcraft, Stonecraft, Woodcraft, Piloting, Running, Mechanics, Service, Trade.',
@@ -801,7 +801,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
         {
             nome: 'Ganhando Estatísticas',
             descricao: 'Sempre que um personagem sobe de nível, ou a partir do 2º nível ao criar um personagem além do 1º nível, escolha dois atributos para realizar uma rolagem de ganho de atributo (ou um atributo para realizar duas rolagens). Consulte o valor atual (temporário) na Tabela para determinar qual dado é usado na rolagem. Role esse tipo de dado e adicione o resultado ao atributo temporário. Os atributos não podem ser aumentados acima de seu valor potencial. Ganhos de atributo também podem ser adquiridos com Pontos de Desenvolvimento. Rolagens adicionais de ganho de atributo podem ser adquiridas por 4 DP cada.',
-            images: ['public/tabela-ganho-stats.png',]
+            images: ['/public/tabela-ganho-stats.png',]
         }
     ], //ok
     'Perícias': [
@@ -810,7 +810,7 @@ export const COMPENDIUM_DATA: Record<string, CompendiumItem[]> = {
             descricao: `Um personagem é amplamente definido por suas habilidades, que definem o que ele sabe e o quão bem ele sabe. Habilidades podem ser praticadas e aprimoradas ao longo do tempo, embora eventualmente cheguem a um ponto de retorno decrescente, onde recebem melhorias menores pela mesma quantidade de esforço.
                         As habilidades estão listadas de acordo com categorias temáticas na Tabela 3-0a. Todas as habilidades dentro de uma categoria (exceto Treinamento de Combate e Conjuração) têm o mesmo custo em Pontos de Desenvolvimento, bônus de atributos da categoria e, frequentemente, um método de resolução compartilhado. Além dos bônus de atributos da categoria, cada habilidade possui seu próprio atributo, que também é adicionado ao total da habilidade (por exemplo, Adestramento de Animais adiciona os bônus de Agilidade e Empatia da categoria, além de Presença para a habilidade). Algumas habilidades exigem especialização ao serem desenvolvidas, que pode ser desenvolvida para múltiplas especializações (por exemplo, ’Montaria’ é desenvolvida como ’Montaria: Cavalo’ ou ’Montaria: Águia Gigante’, e cada uma é aprendida como se fosse uma habilidade separada).
                         As habilidades incluídas são aquelas que serão comuns na maioria das campanhas. Algumas ambientações podem ter novas perícias, ou não usar outras, mais comumente nas categorias de Artesanato e Conhecimento, onde artesanato, idiomas e conhecimentos dependem fortemente da ambientação e do ambiente. As perícias em si não pretendem ser uma lista completa ou exaustiva; no entanto, as categorias são suficientemente gerais para que qualquer nova perícia possa ser adicionada a uma categoria existente.`,
-            images: ['public/tabela 3-0A.png'],
+            images: ['/public/tabela 3-0A.png'],
         },
         {
             nome: 'Desenvolvimento de Perícias',

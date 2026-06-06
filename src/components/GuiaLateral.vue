@@ -38,7 +38,7 @@
                         {{ itemSelecionado.descricao }}
                     </p>
                     <div v-if="itemSelecionado.images" class="grid" :class="itemSelecionado.images.length > 1 ? 'grid-cols-2 gap-4' : 'grid-cols-1'">
-                        <img  v-for="image in itemSelecionado.images" :src="image" alt="Imagem" class="mb-6 mx-auto rounded-lg border border-indigo-200">
+                        <img v-for="image in itemSelecionado.images" :key="image" :src="formatImageUrl(image)" alt="Imagem" class="mb-6 mx-auto rounded-lg border border-indigo-200">
 
                     </div>
                     <div v-if="itemSelecionado.detalhes" class="grid grid-cols-2 gap-4">
@@ -67,7 +67,8 @@ export default defineComponent({
         return {
             compendio: COMPENDIUM_DATA,
             catAberta: null as string | null,
-            itemSelecionado: null as CompendiumItem | null
+            itemSelecionado: null as CompendiumItem | null,
+            baseUrl: import.meta.env.BASE_URL
         };
     },
     methods: {
@@ -76,6 +77,17 @@ export default defineComponent({
         },
         abrirModal(item: CompendiumItem) {
             this.itemSelecionado = item;
+        },
+        formatImageUrl(path: string): string {
+            if (!path) return '';
+
+            if (path.startsWith('http://') || path.startsWith('https://') || path.startsWith('data:')) {
+                return path;
+            }
+
+            const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+            
+            return `${this.baseUrl}${cleanPath}`;
         }
     }
 });
