@@ -34,9 +34,9 @@
                 </tr>
                 <tr class="hover:bg-indigo-50/30 transition-colors">
                     <td class="py-3 px-4 text-sm font-bold text-slate-700">Constituição (Co)</td>
-                    <td><input type="number" v-model.number="ficha.coPot"
+                    <td><input type="number" min="1" max="100" v-model.number="ficha.coPot"
                             class="w-full text-center outline-none bg-transparent"></td>
-                    <td><input type="number" v-model.number="ficha.coTemp"
+                    <td><input type="number" min="1" max="100" v-model.number="ficha.coTemp"
                             class="w-full text-center outline-none bg-transparent"></td>
                     <td><input type="number" v-model.number="ficha.coBonus" readonly
                             class="w-full text-center outline-none bg-transparent"></td>
@@ -50,9 +50,9 @@
                 </tr>
                 <tr class="hover:bg-indigo-50/30 transition-colors">
                     <td class="py-3 px-4 text-sm font-bold text-slate-700">Empatia (Em)</td>
-                    <td><input type="number" v-model.number="ficha.emPot"
+                    <td><input type="number" min="1" max="100" v-model.number="ficha.emPot"
                             class="w-full text-center outline-none bg-transparent"></td>
-                    <td><input type="number" v-model.number="ficha.emTemp"
+                    <td><input type="number" min="1" max="100" v-model.number="ficha.emTemp"
                             class="w-full text-center outline-none bg-transparent"></td>
                     <td><input type="number" v-model.number="ficha.emBonus" readonly
                             class="w-full text-center outline-none bg-transparent"></td>
@@ -66,9 +66,9 @@
                 </tr>
                 <tr class="hover:bg-indigo-50/30 transition-colors">
                     <td class="py-3 px-4 text-sm font-bold text-slate-700">Intuição (In)</td>
-                    <td><input type="number" v-model.number="ficha.inPot"
+                    <td><input type="number" min="1" max="100" v-model.number="ficha.inPot"
                             class="w-full text-center outline-none bg-transparent"></td>
-                    <td><input type="number" v-model.number="ficha.inTemp"
+                    <td><input type="number" min="1" max="100" v-model.number="ficha.inTemp"
                             class="w-full text-center outline-none bg-transparent"></td>
                     <td><input type="number" v-model.number="ficha.inBonus" readonly
                             class="w-full text-center outline-none bg-transparent"></td>
@@ -82,9 +82,9 @@
                 </tr>
                 <tr class="hover:bg-indigo-50/30 transition-colors">
                     <td class="py-3 px-4 text-sm font-bold text-slate-700">Memória (Me)</td>
-                    <td><input type="number" v-model.number="ficha.mePot"
+                    <td><input type="number" min="1" max="100" v-model.number="ficha.mePot"
                             class="w-full text-center outline-none bg-transparent"></td>
-                    <td><input type="number" v-model.number="ficha.meTemp"
+                    <td><input type="number" min="1" max="100" v-model.number="ficha.meTemp"
                             class="w-full text-center outline-none bg-transparent"></td>
                     <td><input type="number" v-model.number="ficha.meBonus" readonly
                             class="w-full text-center outline-none bg-transparent"></td>
@@ -98,9 +98,9 @@
                 </tr>
                 <tr class="hover:bg-indigo-50/30 transition-colors">
                     <td class="py-3 px-4 text-sm font-bold text-slate-700">Presença (Pr)</td>
-                    <td><input type="number" v-model.number="ficha.prPot"
+                    <td><input type="number" min="1" max="100" v-model.number="ficha.prPot"
                             class="w-full text-center outline-none bg-transparent"></td>
-                    <td><input type="number" v-model.number="ficha.prTemp"
+                    <td><input type="number" min="1" max="100" v-model.number="ficha.prTemp"
                             class="w-full text-center outline-none bg-transparent"></td>
                     <td><input type="number" v-model.number="ficha.prBonus" readonly
                             class="w-full text-center outline-none bg-transparent"></td>
@@ -114,9 +114,9 @@
                 </tr>
                 <tr class="hover:bg-indigo-50/30 transition-colors">
                     <td class="py-3 px-4 text-sm font-bold text-slate-700">Rapidez (Qu)</td>
-                    <td><input type="number" v-model.number="ficha.quPot"
+                    <td><input type="number" min="1" max="100" v-model.number="ficha.quPot"
                             class="w-full text-center outline-none bg-transparent"></td>
-                    <td><input type="number" v-model.number="ficha.quTemp"
+                    <td><input type="number" min="1" max="100" v-model.number="ficha.quTemp"
                             class="w-full text-center outline-none bg-transparent"></td>
                     <td><input type="number" v-model.number="ficha.quBonus" readonly
                             class="w-full text-center outline-none bg-transparent"></td>
@@ -130,9 +130,9 @@
                 </tr>
                 <tr class="hover:bg-indigo-50/30 transition-colors">
                     <td class="py-3 px-4 text-sm font-bold text-slate-700">Raciocínio (Re)</td>
-                    <td><input type="number" v-model.number="ficha.rePot"
+                    <td><input type="number" min="1" max="100" v-model.number="ficha.rePot"
                             class="w-full text-center outline-none bg-transparent"></td>
-                    <td><input type="number" v-model.number="ficha.reTemp"
+                    <td><input type="number" min="1" max="100" v-model.number="ficha.reTemp"
                             class="w-full text-center outline-none bg-transparent"></td>
                     <td><input type="number" v-model.number="ficha.reBonus" readonly
                             class="w-full text-center outline-none bg-transparent"></td>
@@ -146,9 +146,9 @@
                 </tr>
                 <tr class="hover:bg-indigo-50/30 transition-colors">
                     <td class="py-3 px-4 text-sm font-bold text-slate-700">Autodisciplina (SD)</td>
-                    <td><input type="number" v-model.number="ficha.sdPot"
+                    <td><input type="number" min="1" max="100" v-model.number="ficha.sdPot"
                             class="w-full text-center outline-none bg-transparent"></td>
-                    <td><input type="number" v-model.number="ficha.sdTemp"
+                    <td><input type="number" min="1" max="100" v-model.number="ficha.sdTemp"
                             class="w-full text-center outline-none bg-transparent"></td>
                     <td><input type="number" v-model.number="ficha.sdBonus" readonly
                             class="w-full text-center outline-none bg-transparent"></td>
@@ -162,9 +162,9 @@
                 </tr>
                 <tr class="hover:bg-indigo-50/30 transition-colors">
                     <td class="py-3 px-4 text-sm font-bold text-slate-700">Força (St)</td>
-                    <td><input type="number" v-model.number="ficha.stPot"
+                    <td><input type="number" min="1" max="100" v-model.number="ficha.stPot"
                             class="w-full text-center outline-none bg-transparent"></td>
-                    <td><input type="number" v-model.number="ficha.stTemp"
+                    <td><input type="number" min="1" max="100" v-model.number="ficha.stTemp"
                             class="w-full text-center outline-none bg-transparent"></td>
                     <td><input type="number" v-model.number="ficha.stBonus" readonly
                             class="w-full text-center outline-none bg-transparent"></td>
