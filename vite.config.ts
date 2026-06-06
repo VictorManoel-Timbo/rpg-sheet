@@ -9,7 +9,7 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/nrpg-sheet/',
+  base: '/rpg-sheet/',
   plugins: [
     vue(),
     vueJsx(),
